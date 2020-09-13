@@ -30,7 +30,7 @@ export default class Particles {
       radius
     })
 
-    if (this.flakes.length > 500) {
+    if (this.flakes.length > 100) {
       this.flakes.shift()
     }
 
