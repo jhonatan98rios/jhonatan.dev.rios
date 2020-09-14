@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Hero from '../partials/Home/Hero'
 import Navbar from '../partials/Home/Navbar'
+import About from '../partials/Home/About'
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
 
         <Navbar />
         <Hero />
+        <About />
         
       </main>
 

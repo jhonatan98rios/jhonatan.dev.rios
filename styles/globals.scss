@@ -18,3 +18,15 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.is-hidden-desktop{
+  @media(min-width: 769px){
+    display: none;
+  }
+}
+
+.is-hidden-mobile{
+  @media(max-width: 768px){
+    display: none;
+  }
+}

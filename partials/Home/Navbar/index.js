@@ -4,7 +4,7 @@ export default function Hero() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.navbarBurger}>
+      <div className={`is-hidden-desktop ${styles.navbarBurger}`}>
           <div />
           <div />
           <div />
