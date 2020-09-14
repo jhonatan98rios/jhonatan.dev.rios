@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Hero from '../partials/Home/Hero'
 import Navbar from '../partials/Home/Navbar'
 import About from '../partials/Home/About'
+import Technologies from '../partials/Home/Technologies'
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <About />
+        <Technologies />
         
       </main>
 
