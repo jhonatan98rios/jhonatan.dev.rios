@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+
+  .socialList{
+    width: 150px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0px;
+
+    .socialLink{
+      width: 36px;
+      height: 36px;
+      border-radius: 18px;
+      cursor: pointer;
+    }
+  }
+}
+

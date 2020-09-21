@@ -23,6 +23,7 @@ export default function Technologies() {
 
   return (
     <div className={styles.container}>
+      <h2 className={styles.title}> Linguagens e Tecnologias </h2>
       <div className={styles.carousel}>
         <ul>
           {

@@ -3,6 +3,8 @@ import Hero from '../partials/Home/Hero'
 import Navbar from '../partials/Home/Navbar'
 import About from '../partials/Home/About'
 import Technologies from '../partials/Home/Technologies'
+import GitHub from '../partials/Home/GitHub'
+import Footer from '../partials/Shared/Footer'
 
 
 export default function Home() {
@@ -19,12 +21,11 @@ export default function Home() {
         <Hero />
         <About />
         <Technologies />
+        <GitHub />
+        <Footer />
         
       </main>
 
-      <footer>
-        
-      </footer>
     </div>
   )
 }

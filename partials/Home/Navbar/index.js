@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './styles.module.scss'
 
 export default function Hero() {
@@ -10,7 +11,10 @@ export default function Hero() {
         <div />
       </div>
       <ul className={styles.navbarList}>
-        <li> Item 1 </li>
+        <li>
+          <Link href={'./'}> Item 1 </Link>
+        </li>
+
         <li> Item 2 </li>
         <li> Item 3 </li>
         <li> Item 4 </li>
