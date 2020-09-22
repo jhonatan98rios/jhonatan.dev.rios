@@ -17,36 +17,11 @@
 }
 
 .carousel{
-  
-  
-  ul{
-    margin: 0 auto;
-    background-color: #232628;
-    border-radius: 48px;
-    height: 145px;
-    width: auto;
-    display: flex;
-    list-style: none;
-
-    li{
-      margin: auto 10px;
-      width: 106px;
-      height: 106px;
-      border-radius: 56px;  
-      color: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      span{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 96px;
-        height: 96px;
-        border-radius: 48px;
-        background-color: #121414;
-      }
-    }
-  }
+  width: 90%;
+  max-width: 1024px;
+  margin: auto;
+  background-color: #232628;
+  border-radius: 64px;
+  padding: 16px;
+  overflow: hidden;
 }

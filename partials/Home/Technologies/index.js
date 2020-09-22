@@ -1,58 +1,49 @@
-import { useEffect } from 'react'
 import styles from './styles.module.scss'
+import TechnologyCircle from '../../../components/Home/TechnologyCircle'
+import Flickity from 'react-flickity-component'
 
-export default function Technologies() {
+const Technologies = ({text}) => {
 
-  const itens = [
-    {
-      text: 'HTML',
-      percentage: '100',
-      initial: '0'
-    },
-    {
-      text: 'CSS',
-      percentage: '20',
-      initial: '0'
-    }
-  ]
-
-  useEffect(()=>{
-
-
-  },[])
+  const itens = ['HTML','CSS', 'JS', 'React', 'React Native', 'Next.js', 'Vue', 'Nuxt.js', 'Node', 'Git', 'Sass', 'Figma', 'Adobe Creative Suite', 'MongoDB', 'MySQL', 'Python', 'Flask']
+  const flickityOptions = {
+    initialIndex: 2,
+    draggable: true,
+    contain: true,
+    prevNextButtons: false,
+    pageDots: false,
+  }
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}> Linguagens e Tecnologias </h2>
+      <h2 className={styles.title}> Linguagens e Tecnologias {text} </h2>
       <div className={styles.carousel}>
-        <ul>
+        <Flickity
+          className={'carousel'} // default ''
+          elementType={'div'} // default 'div'
+          options={flickityOptions} // takes flickity options {}
+          reloadOnUpdate // default false
+          static
+        >
           {
             itens.map((item, index) => {
               return(
-                <li 
-                  className="list-item"
-                  key={index}
-                  style={{
-                    backgroundImage: `conic-gradient(
-                      from 0,
-                      #232628 0,
-                      #232628 calc(100% - ${item.percentage}%),
-                      #00FFC2 0,
-                      #A700F5 50%,
-                      #00FFC2 100%
-                    )`
-                  }}
-                >
-                  <span>
-                    {item.text}
-                  </span>
-                </li>
+                <TechnologyCircle item={item} key={index} />
               )
             })
           }
-        </ul>
+        </Flickity>
       </div>
     </div>
-    
   )
 }
+
+export async function getStaticProps(context) {
+
+  return {
+    props: {
+      text: 'Hello World'
+    },
+  }
+}
+
+export default Technologies
