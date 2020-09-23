@@ -9,7 +9,7 @@ export default function Footer() {
   }, [])
 
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <ul className={styles.socialList}>
 
         <li className={styles.socialLink}> 
@@ -31,6 +31,6 @@ export default function Footer() {
         </li>
 
       </ul>
-    </div>
+    </section>
   )
 }

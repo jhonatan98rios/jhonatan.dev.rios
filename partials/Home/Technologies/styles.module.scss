@@ -15,10 +15,16 @@
 }
 
 .carousel{
-  width: 90%;
+  width: 90vw;
   max-width: 1280px;
   margin: auto;
   border-radius: 64px;
   padding: 16px;
   //background-color: #232628;
+
+  @media (max-width: 768px) {
+    overflow: hidden;
+    border-radius: 0px;
+    width: 100%;
+  }
 }
