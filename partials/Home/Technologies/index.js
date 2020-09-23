@@ -1,6 +1,8 @@
 import styles from './styles.module.scss'
 import TechnologyCircle from '../../../components/Home/TechnologyCircle'
 import Flickity from 'react-flickity-component'
+import VizSensor from 'react-visibility-sensor';
+import { useState } from 'react';
 
 const Technologies = ({text}) => {
 
@@ -12,28 +14,35 @@ const Technologies = ({text}) => {
     prevNextButtons: false,
     pageDots: false,
   }
+  const [isViz, setViz] = useState(false)
 
   return (
-    <div className={styles.container}>
-      <h2 className={styles.title}> Linguagens e Tecnologias {text} </h2>
-      <div className={styles.carousel}>
-        <Flickity
-          className={'carousel'} // default ''
-          elementType={'div'} // default 'div'
-          options={flickityOptions} // takes flickity options {}
-          reloadOnUpdate // default false
-          static
-        >
-          {
-            itens.map((item, index) => {
-              return(
-                <TechnologyCircle item={item} key={index} />
-              )
-            })
-          }
-        </Flickity>
-      </div>
-    </div>
+    <VizSensor onChange={()=> setViz(true) }>
+
+      <div 
+        className={styles.container}
+      >
+        <h2 className={styles.title}> Linguagens e Tecnologias {text} </h2>
+          <div className={styles.carousel}>
+            <Flickity
+              className={'carousel'} 
+              elementType={'div'} 
+              options={flickityOptions} 
+              reloadOnUpdate 
+              static
+            >
+              {
+                itens.map((item, index) => {
+                  return(
+                    <TechnologyCircle item={item} key={index} />
+                  )
+                })
+              }
+            </Flickity>
+          </div>
+      </div>  
+
+    </VizSensor>
   )
 }
 

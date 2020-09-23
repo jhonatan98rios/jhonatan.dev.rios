@@ -8,20 +8,17 @@
   flex-direction: column;
   color: #ffffff;
 
-
   .title{
     margin-bottom: 48px;
     font-weight: 300;
   }
-
 }
 
 .carousel{
   width: 90%;
-  max-width: 1024px;
+  max-width: 1280px;
   margin: auto;
-  background-color: #232628;
   border-radius: 64px;
   padding: 16px;
-  overflow: hidden;
+  //background-color: #232628;
 }
