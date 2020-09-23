@@ -9,7 +9,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <h2 className={styles.title}> 
         Compartilhar o conhecimento e a experiência nos ajuda a ir mais longe. <br /> 
         Acesse aqui o código de meus principais projetos.
@@ -17,6 +17,6 @@ export default function Hero() {
       <Link href={"https://github.com/jhonatan98rios"}>
         GitHub
       </Link>
-    </div>
+    </section>
   )
 }
