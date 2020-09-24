@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Hero from '../partials/Home/Hero'
 import Navbar from '../partials/Shared/Navbar'
+import Hero from '../partials/Home/Hero'
 import About from '../partials/Home/About'
 import Technologies from '../partials/Home/Technologies'
 import GitHub from '../partials/Home/GitHub'
