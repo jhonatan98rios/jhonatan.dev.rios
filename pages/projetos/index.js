@@ -1,19 +1,19 @@
 import Head from 'next/head'
 import Navbar from '../../partials/Shared/Navbar'
-import Universe from '../../partials/Home/Universe'
+import ProjectList from '../../partials/Projects/ProjectList'
 import Footer from '../../partials/Shared/Footer'
 
 export default function Projects() {
   return (
     <div>
       <Head>
-        <title>Jhonatan Teixeira Rios</title>
+        <title>Jhonatan Teixeira Rios | Projetos</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <Navbar />
-        <Universe />
+        <ProjectList />
         <Footer />       
       </main>
 

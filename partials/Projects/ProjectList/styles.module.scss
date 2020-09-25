@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  height: auto;
+  background-color: #121414;
+  margin: 0 auto;
+  padding-top: 64px;
+
+  h1{
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .cardList{
+    width: auto;
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
