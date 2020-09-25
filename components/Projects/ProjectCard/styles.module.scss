@@ -13,16 +13,18 @@
   .description{
     color: #fff;
     text-align: center;
-    background-color: rgba(167, 0, 245, .9);
+    //background-color: rgba(167, 0, 245, .9);
     //background-color: rgb(0, 255, 194, .9);
     height: auto;
     width: 100%;
+    min-height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 0px 16px;
     border-radius: 0px 0px 32px 32px;
+    
 
     h3{
       font-size: 24px;

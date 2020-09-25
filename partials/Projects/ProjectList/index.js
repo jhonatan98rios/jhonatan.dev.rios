@@ -5,16 +5,31 @@ export default function ProjectList() {
 
   const array = [
     {
+      title: 'Whatsapp Clone Vanilla',
+      description: 'Um clone do Whatsapp Web. Tecnologias utilizadas: HTML, CSS, Javascript MVC, Webpack, Firebase-storage, Firebase-firestore e Firebase-functions',
+      background: './projects/whatsapp-clone-vanilla.png',
+      github: 'https://github.com/jhonatan98rios/clothing_store',
+      color: 'rgba(0, 255, 194, .8)'
+    },
+    {
       title: 'Fire Day',
       description: 'Um jogo web criado para conscientizar a população sobre os efeitos das queimadas. As tecnologias utilizadas foram: Vue, Vuex, Vue-router, Vue2-touch-events, Sass e Particles.js',
       background: './projects/fireday.png',
-      github: 'https://github.com/jhonatan98rios/fireDay'
+      github: 'https://github.com/jhonatan98rios/fireDay',
+      color: 'rgba(167, 0, 245, .8)'
     },
     {
       title: 'Clothing Store',
       description: 'Um marketplace para lojas de roupa catalogarem seus produtos. As tecnologias utilizadas foram: React, React-router, Sass e Axios',
       background: './projects/clothing_store.png',
-      github: 'https://github.com/jhonatan98rios/clothing_store'
+      github: 'https://github.com/jhonatan98rios/clothing_store',
+      color: 'rgba(0, 255, 194, .8)'
+    },
+    {
+      title: 'Sistema Interno',
+      description: 'Um sistema de linha de comando para gerenciamento de clientes, funcionários, vendas e estoque. A tecnologia utilizada nesse projeto foi a linguagem C',
+      github: 'https://github.com/jhonatan98rios/clothing_store',
+      color: 'rgba(167, 0, 245, .8)'
     },
   ]
 

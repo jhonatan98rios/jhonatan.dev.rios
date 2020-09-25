@@ -7,10 +7,15 @@ export default function ProjectList({card}) {
     <section 
       className={styles.container}
       style={{
-        backgroundImage: `url(${card.background})`
+        backgroundImage: `url(${card.background || './projects/default.jpg'})`
       }}
     >
-      <div className={styles.description}>
+      <div 
+        className={styles.description}
+        style={{
+          backgroundColor: card.color
+        }}
+      >
         <h3> {card.title} </h3>
         <p> {card.description} </p>
         <button onClick={ () => { console.log(card.github) } }>
