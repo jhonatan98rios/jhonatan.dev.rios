@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import Link from 'next/link'
 import styles from './styles.module.scss'
 
 export default function ProjectList({card}) {
@@ -19,9 +19,23 @@ export default function ProjectList({card}) {
       >
         <h3> {card.title} </h3>
         <p> {card.description} </p>
-        <button onClick={ () => { console.log(card.github) } }>
-          Visualizar
-        </button>
+        
+        {
+          card.link && (
+            <button onClick={ () => { console.log(card.link) } }>
+              Visualizar
+            </button>
+          )
+        }
+
+        {
+          card.github && (
+            <Link href={card.github}>
+              Código Fonte
+            </Link>
+          )
+        }
+        
       </div>
     </section>
   )

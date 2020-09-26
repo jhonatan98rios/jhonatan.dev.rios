@@ -5,14 +5,14 @@ import Flickity from 'react-flickity-component'
 export default function ProjectList() {
 
   const flickityOptions = {
-    initialIndex: 2,
+    initialIndex: 0,
     draggable: true,
     contain: true,
     prevNextButtons: false,
     pageDots: false,
   }
 
-  const array = [
+  const content = [
     {
       title: 'Whatsapp Clone Vanilla',
       description: 'Um clone do Whatsapp Web. Tecnologias utilizadas: HTML, CSS, Javascript MVC, Webpack, Firebase-storage, Firebase-firestore e Firebase-functions',
@@ -35,7 +35,28 @@ export default function ProjectList() {
       color: 'rgba(14,179,156, .9)'
     },
     {
-      title: 'Sistema Interno',
+      title: 'Fareja Fatos App',
+      description: 'Este aplicativo foi desenvolvido durante o Hackcovid-19 (evento patrocinado pela Fiocruz), com o objetivo de auxiliar a população na identificação de noticias falsas através de inteligência artificial. As tecnologias utilizadas foram: React-native, React-router, Styled-components, Axios, Python, Flask e MongoDB',
+      background: './projects/fareja-fatos-app.jpg',
+      github: 'https://github.com/jhonatan98rios/FarejaFatosApp',
+      color: 'rgba(91,26,184, .9)'
+    },
+    {
+      title: 'Fareja Fatos Institucional',
+      description: 'Este site foi desenvolvido para promover e divulgar o aplicativo Fareja Fatos, disponibilizando dados técnicos e artigos científicos para a conscientização da população. As tecnologias utilizadas foram: Next.js (framework React), Styled-components, Axios, MongoDB e Firebase',
+      background: './projects/fareja-fatos-blog.png',
+      github: 'https://github.com/jhonatan98rios/fareja-fatos-site',
+      color: 'rgba(14,179,156, .9)'
+    },
+    {
+      title: 'Smart Gadget Web',
+      description: 'Este aplicativo (PWA) faz uso de inteligência artificial ee proceessamento de linguagem natural para recomendar modelos de notebooks, baseado nas necessidades do usuário. As tecnologias utilizadas foram: React, React-router, Redux, Redux-saga, Jest, Styled-components, Node, Express, MongoDB e Natural.js',
+      background: './projects/smart-gadget.png',
+      github: 'https://github.com/jhonatan98rios/smart.gadget.frontend',
+      color: 'rgba(91,26,184, .9)'
+    },
+    {
+      title: 'Sistema de Gestão',
       description: 'Um sistema de linha de comando para gerenciamento de clientes, funcionários, vendas e estoque. A tecnologia utilizada nesse projeto foi a linguagem C',
       github: 'https://github.com/jhonatan98rios/clothing_store',
       color: 'rgba(91,26,184, .9)'
@@ -44,7 +65,7 @@ export default function ProjectList() {
 
   return (
     <section className={styles.container}>
-      <h1> Meus projetos </h1>
+      <h1> Confira meus projetos principais </h1>
       <Flickity
         className={styles.cardList} 
         elementType={'div'} 
@@ -52,7 +73,7 @@ export default function ProjectList() {
         reloadOnUpdate 
         static
       >
-        {array.map((card, key) => (
+        {content.map((card, key) => (
           <ProjectCard key={key} card={card} />
         ))}
       </Flickity>
@@ -60,18 +81,3 @@ export default function ProjectList() {
   )
 }
 
-
-/* 
-
-FireDay
-
-"core-js": "^3.4.4",
-"particles.js": "^2.0.0",
-"register-service-worker": "^1.6.2",
-"vue": "^2.6.10",
-"vue-flickity": "^1.2.1",
-"vue-router": "^3.1.3",
-"vue2-touch-events": "^2.1.0",
-"vuex": "^3.1.2"
-
-*/
