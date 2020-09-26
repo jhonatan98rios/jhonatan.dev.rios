@@ -12,7 +12,7 @@ export default function Projects() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className="transition">
         <Navbar />
         <ProjectList />
         <GitHub />

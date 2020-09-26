@@ -48,3 +48,12 @@ a {
 .paragraph{
   font-size: 14px !important;
 } 
+
+@keyframes animatedOpacity {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.transition{
+  animation: animatedOpacity 1s linear;
+}
