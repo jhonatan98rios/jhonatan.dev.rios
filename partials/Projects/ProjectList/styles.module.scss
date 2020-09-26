@@ -15,6 +15,11 @@
     width: 90%;
     margin: 64px auto;
     max-width: 1240px;
+
+    @media (max-width: 768px) {
+      overflow: hidden;
+      max-width: 90%;
+    }
   }
 
 }

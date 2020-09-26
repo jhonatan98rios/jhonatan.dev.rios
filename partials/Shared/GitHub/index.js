@@ -10,12 +10,14 @@ export default function Hero() {
 
   return (
     <section className={styles.container}>
-      <h2 className={styles.title}> 
+      <h2 className={`${styles.title} subtitle`}> 
         Compartilhar o conhecimento e a experiência nos ajuda a ir mais longe. <br /> 
         Acesse aqui o código de meus principais projetos.
       </h2>
       <Link href={"https://github.com/jhonatan98rios"}>
-        GitHub
+        <a className="subtitle">
+          GitHub
+        </a>
       </Link>
     </section>
   )

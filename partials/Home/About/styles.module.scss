@@ -8,19 +8,18 @@
 
 .about{
   width: 80%;
-  max-width: 1024px;
-  min-height: 400px;
+  max-width: 720px;
+  min-height: 360px;
   background-color: #232628;
   margin: 0 auto;
   border-radius: 48px;
   position: relative;
   display: flex;
   color: #ffffff;
-  line-height: 28px;
   position: absolute;
   left: 0;
   right: 0;
-  top: -200px;
+  top: -180px;
   line-height: 21px;
 
   .avatar{
@@ -36,7 +35,6 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    filter: drop-shadow(0px 0px 5px rgba(255,255,255,.2));
 
     img{
       border: 4px solid #232628;
@@ -47,9 +45,9 @@
   p{
     max-width: 80%;
     margin: auto;
-    font-size: clamp(16px, 2.5vw ,18px);
     font-weight: 300;
     text-align: center;
+    line-height: 24px;
 
     @media screen {
       margin: 120px auto 60px;

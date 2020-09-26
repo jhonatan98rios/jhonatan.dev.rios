@@ -17,12 +17,12 @@ export default function ProjectList({card}) {
           backgroundColor: card.color
         }}
       >
-        <h3> {card.title} </h3>
-        <p> {card.description} </p>
+        <h3 className="subtitle"> {card.title} </h3>
+        <p className="paragraph"> {card.description} </p>
         
         {
           card.link && (
-            <button onClick={ () => { console.log(card.link) } }>
+            <button className="paragraph" onClick={ () => { console.log(card.link) } }>
               Visualizar
             </button>
           )
@@ -31,7 +31,7 @@ export default function ProjectList({card}) {
         {
           card.github && (
             <Link href={card.github}>
-              Código Fonte
+              <a className="paragraph"> Código Fonte </a>
             </Link>
           )
         }

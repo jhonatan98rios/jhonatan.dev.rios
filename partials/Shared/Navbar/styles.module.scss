@@ -66,4 +66,8 @@
     transform: translate3d(-101%, 0px, 0px);
     transition: all 1s;
   }
+
+  .isOpen{
+    transform: translate3d(0px, 0px, 0px) !important;
+  }
 }

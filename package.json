@@ -2,9 +2,11 @@
   "name": "jhonatan.dev.rios",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jhonatan98rios.github.io/jhonatan.dev.rios/",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
+    "deploy": "next build && next export && ./node_modules/.bin/gh-pages -d out",
     "start": "next start"
   },
   "dependencies": {
@@ -16,5 +18,8 @@
     "react-flickity-component": "^3.5.0",
     "react-visibility-sensor": "^5.1.1",
     "sass": "^1.26.10"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }

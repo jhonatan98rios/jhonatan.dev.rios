@@ -65,7 +65,7 @@ export default function ProjectList() {
 
   return (
     <section className={styles.container}>
-      <h1> Confira meus projetos principais </h1>
+      <h1 className="title"> Confira meus projetos principais </h1>
       <Flickity
         className={styles.cardList} 
         elementType={'div'} 

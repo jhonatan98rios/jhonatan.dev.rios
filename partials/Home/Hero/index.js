@@ -20,7 +20,7 @@ export default function Hero() {
 
   return (
     <section className={styles.container} ref={particlesEl} id={"home-hero"}>
-      <h1 className={styles.title} ref={typeWriterEl}> 
+      <h1 className={`${styles.title} title`} ref={typeWriterEl}> 
         As pessoas que são loucas o suficiente para achar que podem mudar o mundo são aquelas que o mudam
       </h1>
     </section>
