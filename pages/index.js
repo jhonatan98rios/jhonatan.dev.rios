@@ -16,16 +16,13 @@ export default function Home() {
       </Head>
 
       <main>
-
         <Navbar />
         <Hero />
         <About />
         <Technologies />
         <GitHub />
         <Footer />
-        
       </main>
-
     </div>
   )
 }
