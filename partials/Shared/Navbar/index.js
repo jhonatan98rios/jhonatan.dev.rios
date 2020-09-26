@@ -11,21 +11,21 @@ export default function Hero() {
         <div />
       </div>
       <ul className={styles.navbarList}>
-        <li>
-          <Link href="/#home-hero">
+        <Link href="/#home-hero">
+          <li>
             Inicio
-          </Link>
-        </li>
-        <li>
-          <Link href="/#home-technologies">
+          </li>
+        </Link>
+        <Link href="/#home-technologies">
+          <li>
             Tecnologias
-          </Link>
-        </li>
-        <li>
-          <Link href="/projetos">
+          </li>
+        </Link>
+        <Link href="/projetos">
+          <li>
             Projetos
-          </Link>
-        </li>
+          </li>
+        </Link>
       </ul>
     </section>
   )
