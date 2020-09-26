@@ -6,7 +6,7 @@ const Technologies = ({text}) => {
 
   const itens = ['HTML','CSS', 'JS', 'React', 'React Native', 'Next.js', 'Vue', 'Nuxt.js', 'Node', 'Git', 'Sass', 'Figma', 'Adobe Creative Suite', 'MongoDB', 'MySQL', 'Python', 'Flask']
   const flickityOptions = {
-    initialIndex: 2,
+    initialIndex: 0,
     draggable: true,
     contain: true,
     prevNextButtons: false,
