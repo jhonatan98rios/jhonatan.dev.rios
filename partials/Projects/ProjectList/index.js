@@ -1,7 +1,16 @@
 import styles from './styles.module.scss'
 import ProjectCard from '../../../components/Projects/ProjectCard'
+import Flickity from 'react-flickity-component'
 
 export default function ProjectList() {
+
+  const flickityOptions = {
+    initialIndex: 2,
+    draggable: true,
+    contain: true,
+    prevNextButtons: false,
+    pageDots: false,
+  }
 
   const array = [
     {
@@ -9,38 +18,44 @@ export default function ProjectList() {
       description: 'Um clone do Whatsapp Web. Tecnologias utilizadas: HTML, CSS, Javascript MVC, Webpack, Firebase-storage, Firebase-firestore e Firebase-functions',
       background: './projects/whatsapp-clone-vanilla.png',
       github: 'https://github.com/jhonatan98rios/clothing_store',
-      color: 'rgba(0, 255, 194, .8)'
+      color: 'rgba(14,179,156, .9)'
     },
     {
       title: 'Fire Day',
       description: 'Um jogo web criado para conscientizar a população sobre os efeitos das queimadas. As tecnologias utilizadas foram: Vue, Vuex, Vue-router, Vue2-touch-events, Sass e Particles.js',
       background: './projects/fireday.png',
       github: 'https://github.com/jhonatan98rios/fireDay',
-      color: 'rgba(167, 0, 245, .8)'
+      color: 'rgba(91,26,184, .9)'
     },
     {
       title: 'Clothing Store',
       description: 'Um marketplace para lojas de roupa catalogarem seus produtos. As tecnologias utilizadas foram: React, React-router, Sass e Axios',
       background: './projects/clothing_store.png',
       github: 'https://github.com/jhonatan98rios/clothing_store',
-      color: 'rgba(0, 255, 194, .8)'
+      color: 'rgba(14,179,156, .9)'
     },
     {
       title: 'Sistema Interno',
       description: 'Um sistema de linha de comando para gerenciamento de clientes, funcionários, vendas e estoque. A tecnologia utilizada nesse projeto foi a linguagem C',
       github: 'https://github.com/jhonatan98rios/clothing_store',
-      color: 'rgba(167, 0, 245, .8)'
+      color: 'rgba(91,26,184, .9)'
     },
   ]
 
   return (
     <section className={styles.container}>
       <h1> Meus projetos </h1>
-      <div className={styles.cardList}>
+      <Flickity
+        className={styles.cardList} 
+        elementType={'div'} 
+        options={flickityOptions} 
+        reloadOnUpdate 
+        static
+      >
         {array.map((card, key) => (
           <ProjectCard key={key} card={card} />
         ))}
-      </div>
+      </Flickity>
     </section>
   )
 }

@@ -7,7 +7,8 @@ export default function ProjectList({card}) {
     <section 
       className={styles.container}
       style={{
-        backgroundImage: `url(${card.background || './projects/default.jpg'})`
+        backgroundImage: `url(${card.background || './projects/default.jpg'})`,
+        filter: `drop-shadow(0px 0px 5px ${card.color})`
       }}
     >
       <div 

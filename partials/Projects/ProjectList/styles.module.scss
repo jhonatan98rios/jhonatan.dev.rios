@@ -1,10 +1,10 @@
 .container {
   width: 100%;
   height: auto;
-  min-height: calc(100vh - 100px);
   background-color: #121414;
   margin: 0 auto;
   padding-top: 64px;
+  padding-bottom: 64px;
 
   h1{
     color: #ffffff;
@@ -13,10 +13,7 @@
 
   .cardList{
     width: auto;
-    display: flex;
-    height: 600px;
-    justify-content: center;
-    align-items: center;
+    margin: 64px auto;
   }
 
 }

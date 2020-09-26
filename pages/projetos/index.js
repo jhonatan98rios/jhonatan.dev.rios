@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbar from '../../partials/Shared/Navbar'
 import ProjectList from '../../partials/Projects/ProjectList'
+import GitHub from '../../partials/Shared/GitHub'
 import Footer from '../../partials/Shared/Footer'
 
 export default function Projects() {
@@ -14,6 +15,7 @@ export default function Projects() {
       <main>
         <Navbar />
         <ProjectList />
+        <GitHub />
         <Footer />       
       </main>
 

@@ -12,18 +12,18 @@ export default function Hero() {
       </div>
       <ul className={styles.navbarList}>
         <li>
-          <Link href="#home-hero">
+          <Link href="/#home-hero">
             Inicio
           </Link>
         </li>
         <li>
-          <Link href="#home-about">
-            Sobre
+          <Link href="/#home-technologies">
+            Tecnologias
           </Link>
         </li>
         <li>
-          <Link href="#home-technologies">
-            Tecnologias
+          <Link href="/projetos">
+            Projetos
           </Link>
         </li>
       </ul>
