@@ -5,9 +5,9 @@
   "homepage": "https://jhonatan98rios.github.io/jhonatan.dev.rios/",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "deploy": "next build && next export && ./node_modules/.bin/gh-pages -d out",
-    "start": "next start"
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "flickity": "^2.2.1",
