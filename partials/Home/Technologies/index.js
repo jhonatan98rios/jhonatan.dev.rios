@@ -10,7 +10,7 @@ const Technologies = ({text}) => {
     draggable: true,
     contain: true,
     prevNextButtons: false,
-    pageDots: true,
+    pageDots: false,
   }
 
   return (
