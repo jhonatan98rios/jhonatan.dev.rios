@@ -5,6 +5,7 @@
   margin: 0 auto;
   padding-top: 64px;
   padding-bottom: 64px;
+  overflow: hidden;
 
   h1{
     color: #ffffff;
@@ -17,8 +18,7 @@
     max-width: 1240px;
 
     @media (max-width: 768px) {
-      overflow: hidden;
-      max-width: 90%;
+      width: 80%;
     }
   }
 

@@ -55,5 +55,28 @@ a {
 }
 
 .transition{
-  animation: animatedOpacity 1s linear;
+  animation: animatedOpacity 2s linear;
+}
+
+.flickity-page-dots{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0px;
+  margin-top: 32px;
+
+  @media(min-width: 769px){
+    display: none;
+  }
+  
+  .dot{
+    background-color: #aaaaaa;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+  }
+
+  .is-selected{
+    background-color: rgb(14,179,156);
+  }
 }

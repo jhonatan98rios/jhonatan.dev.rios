@@ -9,7 +9,8 @@ export default function ProjectList() {
     draggable: true,
     contain: true,
     prevNextButtons: false,
-    pageDots: false,
+    pageDots: true,
+    cellAlign: 'center'
   }
 
   const content = [
@@ -59,7 +60,7 @@ export default function ProjectList() {
       title: 'Sistema de Gestão',
       description: 'Um sistema de linha de comando para gerenciamento de clientes, funcionários, vendas e estoque. A tecnologia utilizada nesse projeto foi a linguagem C',
       github: 'https://github.com/jhonatan98rios/clothing_store',
-      color: 'rgba(91,26,184, .9)'
+      color: 'rgba(14,179,156, .9)'
     },
   ]
 

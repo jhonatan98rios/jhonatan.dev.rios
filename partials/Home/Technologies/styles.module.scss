@@ -7,6 +7,7 @@
   align-items: center;
   flex-direction: column;
   color: #ffffff;
+  overflow: hidden;
 
   .title{
     margin-bottom: 48px;
@@ -21,10 +22,4 @@
   border-radius: 64px;
   padding: 16px;
   //background-color: #232628;
-
-  @media (max-width: 768px) {
-    overflow: hidden;
-    border-radius: 0px;
-    width: 100%;
-  }
 }
