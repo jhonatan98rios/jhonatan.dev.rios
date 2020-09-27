@@ -15,7 +15,7 @@ const Technologies = ({text}) => {
 
   return (
     <section className={styles.container} id={"home-technologies"} >
-      <h2 className={styles.title}> Linguagens e Tecnologias {text} </h2>
+      <h2 className={`${styles.title} title`}> Linguagens e Tecnologias {text} </h2>
         <div className={styles.carousel}>
           <Flickity
             className={'carousel'} 

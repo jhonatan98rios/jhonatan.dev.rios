@@ -24,17 +24,17 @@ export default function Navbar() {
       </div>
       <ul className={`${styles.navbarList} ${ isOpen ? styles.isOpen : null}`}>
         <Link href="/#home-hero">
-          <li className="subtitle" onClick={toogleMenu}>
+          <li className="paragraph" onClick={toogleMenu}>
             Inicio
           </li>
         </Link>
         <Link href="/#home-technologies">
-          <li className="subtitle" onClick={toogleMenu}>
+          <li className="paragraph" onClick={toogleMenu}>
             Tecnologias
           </li>
         </Link>
         <Link href="/projetos">
-          <li className="subtitle" onClick={toogleMenu}>
+          <li className="paragraph" onClick={toogleMenu}>
             Projetos
           </li>
         </Link>
