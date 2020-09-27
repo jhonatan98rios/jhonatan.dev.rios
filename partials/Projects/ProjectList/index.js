@@ -51,7 +51,7 @@ export default function ProjectList() {
     },
     {
       title: 'Smart Gadget Web',
-      description: 'Este aplicativo (PWA) faz uso de inteligência artificial ee proceessamento de linguagem natural para recomendar modelos de notebooks, baseado nas necessidades do usuário. As tecnologias utilizadas foram: React, React-router, Redux, Redux-saga, Jest, Styled-components, Node, Express, MongoDB e Natural.js',
+      description: 'Este app faz uso de inteligência artificial e proceessamento de linguagem natural para recomendar modelos de notebooks, baseado nas necessidades do usuário. As tecnologias utilizadas foram: React, React-router, Redux, Redux-saga, Jest, Styled-components, Node, Express, MongoDB e Natural.js',
       background: './projects/smart-gadget.png',
       github: 'https://github.com/jhonatan98rios/smart.gadget.frontend',
       color: 'rgba(91,26,184, .9)'
