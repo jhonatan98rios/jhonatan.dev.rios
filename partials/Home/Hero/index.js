@@ -24,7 +24,7 @@ export default function Hero() {
         As pessoas que são loucas o suficiente para achar que podem mudar o mundo, são aquelas que o mudam
       </h1>
       <span className={`${styles.quote} subtitle`}>
-        - Steve Jobs
+        Steve Jobs
       </span>
     </section>
   )
