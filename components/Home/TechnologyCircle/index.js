@@ -9,12 +9,12 @@ export default function Technologies({item}) {
 
     let animation = setInterval(() => {
       if(frame > 0){
-        if(frame <= 60 && frame >= 40){ setFrame(old => old - 4) } else 
-        if(frame <= 80 && frame >= 20){ setFrame(old => old - 3) } else
-        if(frame <= 90 && frame >= 10){ setFrame(old => old - 2) }
+        if(frame <= 60 && frame >= 40){ setFrame(old => old - 3) } else 
+        if(frame <= 80 && frame >= 20){ setFrame(old => old - 2) } else
+        if(frame <= 90 && frame >= 10){ setFrame(old => old - 1) }
         else { setFrame(old => old - 1) }
       }
-    }, 50)
+    }, 30)
     return () => clearInterval(animation)
   },[frame])
 
