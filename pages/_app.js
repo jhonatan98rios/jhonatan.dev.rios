@@ -1,28 +1,24 @@
-import { motion } from 'framer-motion'
+import { useEffect } from 'react';
+import Particles from '../controllers/Particles'
 import '../styles/globals.scss'
 
-function MyApp({ Component, pageProps, router }) {
+function MyApp({ Component, pageProps }) {
+
+  const particlesEl = React.createRef()
+
+  useEffect(()=>{
+    
+    const particles = new Particles(particlesEl.current, window.innerHeight, window.innerWidth)
+    particles.startParticles()
+
+  }, [])
   
   return (
-    <motion.div key={router.route}>
+    <>
+      <div ref={particlesEl} />
       <Component {...pageProps} />
-    </motion.div>
+    </>
   )
 }
 
 export default MyApp
-
-
-/* 
-initial="pageInitial" animate="pageAnimate" variants={{
-  pageInitial: {
-    opacity: 0,
-  },
-  pageAnimate: {
-    opacity: 1,
-    transition: {
-      duration: 1
-    }
-  },
-}}
-*/
