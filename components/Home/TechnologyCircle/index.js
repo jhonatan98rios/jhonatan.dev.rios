@@ -14,7 +14,7 @@ export default function Technologies({item}) {
         if(frame <= 90 && frame >= 10){ setFrame(old => old - 1) }
         else { setFrame(old => old - 1) }
       }
-    }, 36)
+    }, 30)
     return () => clearInterval(animation)
   },[frame])
 
