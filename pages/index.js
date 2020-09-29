@@ -3,6 +3,7 @@ import Navbar from '../partials/Shared/Navbar'
 import Hero from '../partials/Home/Hero'
 import About from '../partials/Home/About'
 import Technologies from '../partials/Home/Technologies'
+/* import ProjectsBanner from '../partials/Home/ProjectsBanner' */
 import GitHub from '../partials/Shared/GitHub'
 import Footer from '../partials/Shared/Footer'
 
@@ -20,6 +21,7 @@ export default function Home() {
         <Hero />
         <About />
         <Technologies />
+        {/* <ProjectsBanner /> */}
         <GitHub />
         <Footer />
       </main>
