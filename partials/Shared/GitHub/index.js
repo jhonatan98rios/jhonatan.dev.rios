@@ -15,7 +15,7 @@ export default function Hero() {
         Acesse aqui o código de meus principais projetos.
       </h2>
       <Link href={"https://github.com/jhonatan98rios"}>
-        <a className="subtitle">
+        <a className="subtitle" target="_blank">
           GitHub
         </a>
       </Link>

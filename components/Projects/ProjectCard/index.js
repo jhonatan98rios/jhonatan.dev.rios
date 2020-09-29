@@ -31,7 +31,7 @@ export default function ProjectList({card}) {
         {
           card.github && (
             <Link href={card.github}>
-              <a className="paragraph"> Código Fonte </a>
+              <a className="paragraph" target="_blank"> Código Fonte </a>
             </Link>
           )
         }
