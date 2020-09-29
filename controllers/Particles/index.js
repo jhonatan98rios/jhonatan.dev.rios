@@ -12,7 +12,7 @@ export default class Particles {
 
     this.ctx = this.canvas.getContext('2d')
     this.backgroundImage = new Image()
-    this.backgroundImage.src = "./black.png"
+    this.backgroundImage.src = "https://super.abril.com.br/wp-content/uploads/2019/09/si_pretomit.png"
 
     this.flakes = []
   }
