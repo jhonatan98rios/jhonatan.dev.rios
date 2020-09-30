@@ -24,9 +24,10 @@ export default function Technologies({item}) {
         className={styles.listItem}
         style={{ backgroundImage: `conic-gradient( from 0, #232628 0, #232628 ${frame}%, #00FFC2 0, #A700F5 50%, #00FFC2 100% )` }}
       >
-        <span className="paragraph">
-          {item}
-        </span>
+        {/* <span className="paragraph">
+          {item.title}
+        </span> */}
+        <img src={item.url} alt={item.title}/>
       </li>
     </>
     
