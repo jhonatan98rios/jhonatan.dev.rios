@@ -7,7 +7,6 @@ import About from '../partials/Home/About'
 import Technologies from '../partials/Home/Technologies'
 import GitHub from '../partials/Shared/GitHub'
 import Footer from '../partials/Shared/Footer'
-import { useEffect, useState } from 'react'
 
 function Home({data}) {
 
