@@ -21,9 +21,7 @@ function Home({data}) {
         <Navbar />
         <Hero />
         <About />
-        {
-          data && <Technologies content={data.body.technologies} />
-        }
+        <Technologies content={data.body.technologies} />
         <GitHub />
         <Footer />
       </main>
