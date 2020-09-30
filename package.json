@@ -9,6 +9,7 @@
     "start": "next start -p $PORT"
   },
   "dependencies": {
+    "axios": "^0.20.0",
     "flickity": "^2.2.1",
     "next": "9.5.3",
     "react": "16.13.1",

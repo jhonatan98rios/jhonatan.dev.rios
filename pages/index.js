@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import axios from 'axios'
 
 import Navbar from '../partials/Shared/Navbar'
 import Hero from '../partials/Home/Hero'
@@ -6,9 +7,9 @@ import About from '../partials/Home/About'
 import Technologies from '../partials/Home/Technologies'
 import GitHub from '../partials/Shared/GitHub'
 import Footer from '../partials/Shared/Footer'
-/* import ProjectsBanner from '../partials/Home/ProjectsBanner' */
+import { useEffect, useState } from 'react'
 
-export default function Home() {
+function Home({data}) {
 
   return (
     <div>
@@ -21,11 +22,28 @@ export default function Home() {
         <Navbar />
         <Hero />
         <About />
-        <Technologies />
-        {/* <ProjectsBanner /> */}
+        {
+          data && <Technologies content={data.body.technologies} />
+        }
         <GitHub />
         <Footer />
       </main>
     </div>
   )
 }
+
+export async function getStaticProps() {
+
+  const port = process.env.PORT || 3000
+
+  const res = await axios.get(`http://localhost:${port}/api/home`)
+  const data = await res.data.page
+
+  return {
+    props: {
+      data: data
+    }
+  }
+}
+
+export default Home
