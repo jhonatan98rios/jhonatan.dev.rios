@@ -1,10 +1,12 @@
 import styles from './styles.module.scss'
+import Particles from '../../../controllers/Particles'
 import TypeWriter from '../../../controllers/TypeWriter'
 import Particles from '../../../controllers/Particles'
 import { useEffect } from 'react';
 
-export default function Hero() {
+export default function Hero({content}) {
 
+  const particlesEl = React.createRef()
   const typeWriterEl = React.createRef()
   const particlesEl = React.createRef()
   
@@ -23,7 +25,7 @@ export default function Hero() {
   return (
     <section className={styles.container} id={"home-hero"} ref={particlesEl}>
       <h1 className={`${styles.title} title`} ref={typeWriterEl}> 
-        "As pessoas que são loucas o suficiente para achar que podem mudar o mundo, são aquelas que o mudam" (Steve Jobs)
+        {content}
       </h1>
     </section>
   )

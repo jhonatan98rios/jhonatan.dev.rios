@@ -1,6 +1,6 @@
 import styles from './styles.module.scss'
 
-export default function Hero() {
+export default function Hero({content}) {
 
   return (
     <section className={styles.container} id={"home-about"}>
@@ -9,7 +9,7 @@ export default function Hero() {
           <img src='./avatar.png' />
         </div>
         <p className="paragraph">
-          Me chamo Jhonatan Teixeira Rios, e atuo como programador há 2 anos. Sou formado em comunicação visual e tenho 1 ano de experiência como Designer Gráfico e Motion Designer. Atualmente trabalho como Desenvolvedor Front-End para clientes externos além de manter sistemas web e aplicativos independentes, desenvolvidos em diversas técnologias como Vue, React, React Native, Node e Python.
+          {content}
         </p>
       </div>
     </section>
