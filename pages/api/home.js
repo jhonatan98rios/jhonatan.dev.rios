@@ -59,7 +59,7 @@ export const home = (req, res) => {
         }, 
         { 
           title: 'Adobe Creative Suite', 
-          url: './technologies/figma.png' 
+          url: './technologies/adobe.png' 
         }, 
         { 
           title: 'MongoDB', 
