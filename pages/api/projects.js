@@ -34,7 +34,7 @@ export const projects = (req, res) => {
           {
             title: 'Fareja Fatos App',
             description: 'Este aplicativo foi desenvolvido durante o Hackcovid-19 (evento patrocinado pela Fiocruz), com o objetivo de auxiliar a população na identificação de noticias falsas através de inteligência artificial. As tecnologias utilizadas foram: React-native, React-router, Styled-components, Axios, Python, Flask e MongoDB',
-            background: './projects/fareja-fatos-app.jpg',
+            background: './projects/fareja-fatos-app.png',
             github: 'https://github.com/jhonatan98rios/FarejaFatosApp',
             color: 'rgba(91,26,184, .9)'
           },
