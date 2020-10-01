@@ -1,5 +1,4 @@
 import styles from './styles.module.scss'
-import Particles from '../../../controllers/Particles'
 import TypeWriter from '../../../controllers/TypeWriter'
 import Particles from '../../../controllers/Particles'
 import { useEffect } from 'react';
@@ -8,7 +7,6 @@ export default function Hero({content}) {
 
   const particlesEl = React.createRef()
   const typeWriterEl = React.createRef()
-  const particlesEl = React.createRef()
   
   
   useEffect(()=>{
