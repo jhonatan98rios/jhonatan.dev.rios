@@ -1,24 +1,39 @@
 import Head from 'next/head'
-import Navbar from '../../partials/Shared/Navbar'
+import { projects } from '../api/projects'
+
 import ProjectList from '../../partials/Projects/ProjectList'
 import GitHub from '../../partials/Shared/GitHub'
-import Footer from '../../partials/Shared/Footer'
 
-export default function Projects() {
+import Layout from '../../layout'
+
+function Projects({data}) {
+
   return (
     <div>
       <Head>
-        <title>Jhonatan Teixeira Rios | Projetos</title>
+        <title> {data.head.title} </title>
+        <description> {data.head.description} </description>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="transition">
-        <Navbar />
-        <ProjectList />
-        <GitHub />
-        <Footer />       
-      </main>
+      <Layout>
+        <ProjectList content={data.body.projects} />
+        <GitHub content={data.body.github} />
+      </Layout>
 
     </div>
   )
 }
+
+export async function getStaticProps() {
+
+  const data = projects()
+
+  return {
+    props: {
+      data
+    }
+  }
+}
+
+export default Projects

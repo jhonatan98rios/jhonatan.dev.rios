@@ -1,44 +1,40 @@
 import Head from 'next/head'
-import axios from 'axios'
+import { home } from './api/home'
 
-import Navbar from '../partials/Shared/Navbar'
 import Hero from '../partials/Home/Hero'
 import About from '../partials/Home/About'
 import Technologies from '../partials/Home/Technologies'
 import GitHub from '../partials/Shared/GitHub'
-import Footer from '../partials/Shared/Footer'
+
+import Layout from '../layout'
 
 function Home({data}) {
 
   return (
     <div>
       <Head>
-        <title>Jhonatan Teixeira Rios</title>
+        <title> {data.head.title} </title>
+        <description> {data.head.description} </description>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="transition">
-        <Navbar />
-        <Hero />
-        <About />
+      <Layout>
+        <Hero content={data.body.hero} />
+        <About content={data.body.about} />
         <Technologies content={data.body.technologies} />
-        <GitHub />
-        <Footer />
-      </main>
+        <GitHub content={data.body.github} />
+      </Layout>
     </div>
   )
 }
 
 export async function getStaticProps() {
 
-  const port = process.env.PORT || 3000
-
-  const res = await axios.get(`http://localhost:${port}/api/home`)
-  const data = await res.data.page
+  const data = home()
 
   return {
     props: {
-      data: data
+      data
     }
   }
 }

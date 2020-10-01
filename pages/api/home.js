@@ -1,9 +1,13 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
-export default (req, res) => {
+export const home = (req, res) => {
 
   const page = {
+    head:{
+      title: 'Jhonatan Teixeira Rios',
+      description: 'Seja bem vindo ao meu portfólio de desenvolvimento web'
+    },
     body: {
+      hero: '"As pessoas que são loucas o suficiente para achar que podem mudar o mundo, são aquelas que o mudam" (Steve Jobs)',
+      about: 'Me chamo Jhonatan Teixeira Rios, e atuo como programador há 2 anos. Sou formado em comunicação visual e tenho 1 ano de experiência como Designer Gráfico e Motion Designer. Atualmente trabalho como Desenvolvedor Front-End para clientes externos além de manter sistemas web e aplicativos independentes, desenvolvidos em diversas técnologias como Vue, React, React Native, Node e Python.',
       technologies: [
         { 
           title: 'HTML', 
@@ -73,16 +77,11 @@ export default (req, res) => {
           title: 'Flask',
           url: './technologies/flask.png'
         }
-      ]
+      ],
+      github: 'Compartilhar o conhecimento e a experiência nos ajuda a ir mais longe. Acesse aqui o código de meus principais projetos.'
     }
   }
 
-  if (req.method === 'GET'){
-    res.statusCode = 200
-    res.end(JSON.stringify({ page }))
-  }else{
-    res.statusCode = 500
-    res.end(JSON.stringify({ error: 'Erro ao conectar' }))
-  }
+  return page
 
 }
