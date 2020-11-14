@@ -1,4 +1,4 @@
-import { home } from './api/home'
+import { home } from '../mockdata/home'
 import Layout from '../layout'
 
 import HeadComponent from '../partials/Shared/HeadComponent'

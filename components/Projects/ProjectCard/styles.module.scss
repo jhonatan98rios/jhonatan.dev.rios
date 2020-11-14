@@ -34,7 +34,7 @@
       margin-bottom: 12px;
     }
 
-    button{
+    .button{
       margin-top: 12px;
       width: 200px;
       height: 42px;
@@ -43,6 +43,10 @@
       color: #fff;
       border: 2px solid #fff;
       cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     a{

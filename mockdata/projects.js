@@ -43,12 +43,14 @@ export const projects = (req, res) => {
             description: 'Este site foi desenvolvido para promover e divulgar o aplicativo Fareja Fatos, disponibilizando dados técnicos e artigos científicos para a conscientização da população. As tecnologias utilizadas foram: Next.js (framework React), Styled-components, Axios, MongoDB e Firebase',
             background: './projects/fareja-fatos-blog.png',
             github: 'https://github.com/jhonatan98rios/fareja-fatos-site',
+            link: 'https://fareja-fatos-web.herokuapp.com/',
             color: 'rgba(14,179,156, .9)'
           },
           {
             title: 'Smart Gadget Web',
             description: 'Este app faz uso de inteligência artificial e proceessamento de linguagem natural para recomendar modelos de notebooks, baseado nas necessidades do usuário. As tecnologias utilizadas foram: React, React-router, Redux, Redux-saga, Jest, Styled-components, Node, Express, MongoDB e Natural.js',
             background: './projects/smart-gadget.png',
+            link: 'https://smart-gadget-web.herokuapp.com/',
             github: 'https://github.com/jhonatan98rios/smart.gadget.frontend',
             color: 'rgba(91,26,184, .9)'
           },
