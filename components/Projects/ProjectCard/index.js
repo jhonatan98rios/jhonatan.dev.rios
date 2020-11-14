@@ -22,7 +22,7 @@ export default function ProjectList({card}) {
         
         {
           card.link && (
-            <Link href={card.github}>
+            <Link href={card.link}>
               <a className={`paragraph ${styles.button}`} target="_blank"> Visualizar </a>
             </Link>
           )
