@@ -1,4 +1,4 @@
-import { projects } from '../api/projects'
+import { projects } from '../../mockdata/projects'
 import Layout from '../../layout'
 
 import HeadComponent from '../../partials/Shared/HeadComponent'

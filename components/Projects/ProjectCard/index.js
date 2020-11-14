@@ -22,9 +22,9 @@ export default function ProjectList({card}) {
         
         {
           card.link && (
-            <button className="paragraph" onClick={ () => { console.log(card.link) } }>
-              Visualizar
-            </button>
+            <Link href={card.github}>
+              <a className={`paragraph ${styles.button}`} target="_blank"> Visualizar </a>
+            </Link>
           )
         }
 
