@@ -6,6 +6,7 @@ import Hero from '../partials/Home/Hero'
 import About from '../partials/Home/About'
 import Technologies from '../partials/Home/Technologies'
 import GitHub from '../partials/Shared/GitHub'
+import FarejaFatos from '../partials/Home/FarejaFatos'
 
 function Home({data}) {
 
@@ -17,6 +18,7 @@ function Home({data}) {
         <About content={data.body.about} />
         <Technologies content={data.body.technologies} />
         <GitHub content={data.body.github} />
+        <FarejaFatos content={data.body.farejafatos} />
       </Layout>
     </>
   )

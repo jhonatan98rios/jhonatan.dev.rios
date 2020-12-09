@@ -98,7 +98,17 @@ export const home = (req, res) => {
           }
         ]
       },
-      github: 'Compartilhar o conhecimento e a experiência nos ajuda a ir mais longe. Acesse aqui o código de meus principais projetos.'
+      github: 'Compartilhar o conhecimento e a experiência nos ajuda a ir mais longe. Acesse aqui o código de meus principais projetos.',
+      farejafatos: {
+        title: 'Fareja Fatos',
+        description1: 'Verifique se uma notícia é falsa em apensar 3 cliques.',
+        description2: 'É só instalar o app, selecionar o texto da notícia e compartilhar, diretamente de qualquer aplicativo.',
+        knowmore: {
+          href: 'https://fareja-fatos-web.herokuapp.com/',
+          label: 'Veja mais',
+          target: '_blank'
+        }
+      }
     }
   }
 
