@@ -19,6 +19,7 @@
     "react-dom": "16.13.1",
     "react-flickity-component": "^3.5.0",
     "react-visibility-sensor": "^5.1.1",
-    "sass": "^1.26.10"
+    "sass": "^1.26.10",
+    "three": "^0.123.0"
   }
 }
