@@ -22,6 +22,10 @@
     animation: piscar 1s infinite;
   }
 
+  @media(max-width: 768px){
+    top: calc(50vh - 130px);
+  }
+
 }
 
 @keyframes piscar{

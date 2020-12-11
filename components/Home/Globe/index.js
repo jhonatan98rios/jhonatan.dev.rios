@@ -16,12 +16,12 @@ export default function Globe(){
     const radius = 0.5
     const segments = 64
     const angle = 5.5
-    const position = -0.2
+    const position = window.innerWidth < 768 ? -0.4 : -0.2
     const rotation = 0.2 / 864; //86400; 200x velocidade da terra
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(45, width / height, 0.01, 1000)
-    camera.position.z = 1.1
+    camera.position.z = window.innerWidth < 768 ? 1.6 : 1.1
 
     const renderer = new THREE.WebGLRenderer();
     renderer.setSize(width, height);
@@ -31,7 +31,7 @@ export default function Globe(){
     
     const sphere = createSphere(radius, segments);
     sphere.rotation.y = angle;
-    sphere.rotation.x = -0.4;
+    sphere.rotation.x = -0.4
     sphere.position.y = position
     
     const clouds = createClouds(radius, segments);
