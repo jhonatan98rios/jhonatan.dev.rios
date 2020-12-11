@@ -5,7 +5,7 @@ export function createSphere(radius, segments) {
     new THREE.SphereGeometry(radius, segments, segments),
     new THREE.MeshPhongMaterial({
       map: new THREE.TextureLoader().load('globe/rsz_world.jpg'),
-      bumpMap: new THREE.TextureLoader().load('globe/bump.jpg'),
+      bumpMap: new THREE.TextureLoader().load('globe/rsz_bump.jpg'),
       bumpScale: 0.003,
       specularMap: new THREE.TextureLoader().load('globe/rsz_water.png'), // 2048	x	1024
       specular: new THREE.Color(0x111111),
