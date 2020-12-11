@@ -1,8 +1,8 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import styles from './style.module.scss'
 
 import * as THREE from "three"
-import { createSphere, createClouds, createStars } from '../../../controllers/Globe/create'
+import { createSphere, createClouds, createStars } from '../../../controllers/Globe'
 
 export default function Globe(){
 
@@ -14,8 +14,10 @@ export default function Globe(){
     const height = window.innerHeight * 1.5
 
     const radius = 0.5
-    const segments = 32
-    const rotation = 6
+    const segments = 64
+    const angle = 5.5
+    const position = -0.2
+    const rotation = 0.2 / 864; //86400; 200x velocidade da terra
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(45, width / height, 0.01, 1000)
@@ -24,35 +26,38 @@ export default function Globe(){
     const renderer = new THREE.WebGLRenderer();
     renderer.setSize(width, height);
 
-    const light = new THREE.DirectionalLight(0x888888, 2);
+    const light = new THREE.DirectionalLight(0xaaaaaa, 2);
     light.position.set(5, 5, -3);
     
     const sphere = createSphere(radius, segments);
-    sphere.rotation.y = rotation;
-    sphere.position.y = -0.2
+    sphere.rotation.y = angle;
+    sphere.rotation.x = -0.4;
+    sphere.position.y = position
     
     const clouds = createClouds(radius, segments);
-    clouds.rotation.y = rotation;
-    clouds.position.y = -0.2
+    clouds.rotation.y = angle;
+    clouds.rotation.x = -0.4;
+    clouds.position.y = position
     
     //const stars = createStars(90, 64);
     const webglEl = webgl.current
 
     webglEl.appendChild(renderer.domElement);
-    scene.add(new THREE.AmbientLight(0x010101));
+    scene.add(new THREE.AmbientLight(0x020202));
     scene.add(light)
     scene.add(sphere)
     scene.add(clouds)
     //scene.add(stars);
 
     const animation = setInterval(()=>{
-      sphere.rotation.y += 0.2 / 864; //86400; 200x velocidade da terra
-      clouds.rotation.y += 0.25 / 864; //86400;	
+      sphere.rotation.y += rotation
+      sphere.rotation.x -= rotation
+      clouds.rotation.y += rotation * 1.8
+      clouds.rotation.x -= rotation * 1.5
       renderer.render(scene, camera);
     }, 50)
 
     return ()=> clearInterval(animation)
-
   }, [])
 
   return (
