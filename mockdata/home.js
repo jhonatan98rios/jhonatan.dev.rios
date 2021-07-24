@@ -23,6 +23,10 @@ export const home = (req, res) => {
             url: './technologies/js.png' 
           }, 
           { 
+            title: 'Typescript', 
+            url: './technologies/typescript.png' 
+          }, 
+          { 
             title: 'React', 
             url: './technologies/react.png' 
           },
@@ -47,20 +51,16 @@ export const home = (req, res) => {
             url: './technologies/nuxt.png' 
           }, 
           { 
+            title: 'Ionic', 
+            url: './technologies/ionic.png' 
+          },
+          { 
             title: 'Sass', 
             url: './technologies/sass.png' 
           },
           { 
             title: 'Styled-Components', 
             url: './technologies/styled.png' 
-          },
-          { 
-            title: 'Figma', 
-            url: './technologies/figma.png' 
-          }, 
-          { 
-            title: 'Adobe Creative Suite', 
-            url: './technologies/adobe.png' 
           }
         ],
         backend: [
@@ -73,8 +73,8 @@ export const home = (req, res) => {
             url: './technologies/express.png' 
           },
           { 
-            title: 'Gulp', 
-            url: './technologies/gulp.png' 
+            title: 'Socketio', 
+            url: './technologies/socketio.png' 
           },
           { 
             title: 'Python', 
@@ -89,13 +89,47 @@ export const home = (req, res) => {
             url: './technologies/mongo.png' 
           }, 
           { 
+            title: 'PostgreSQL', 
+            url: './technologies/postgresql.png' 
+          },
+          { 
             title: 'MySQL', 
             url: './technologies/mysql.png' 
           },
           { 
-            title: 'RealmDB', 
-            url: './technologies/realmdb.png' 
+            title: 'SQLite', 
+            url: './technologies/sqlite.png' 
           }
+        ],
+        others: [
+          { 
+            title: 'Git', 
+            url: './technologies/git.png' 
+          },
+          { 
+            title: 'Webpack', 
+            url: './technologies/webpack.png' 
+          },
+          { 
+            title: 'Gulp', 
+            url: './technologies/gulp.png' 
+          },
+          { 
+            title: 'Grunt', 
+            url: './technologies/grunt.png' 
+          },
+          { 
+            title: 'Jest', 
+            url: './technologies/jest.png' 
+          },
+          { 
+            title: 'Figma', 
+            url: './technologies/figma.png' 
+          }, 
+          { 
+            title: 'Adobe Creative Suite', 
+            url: './technologies/adobe.png' 
+          },
         ]
       },
       github: 'Compartilhar o conhecimento e a experiência nos ajuda a ir mais longe. Acesse aqui o código de meus principais projetos.',
