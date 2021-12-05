@@ -11,55 +11,37 @@ export const projects = (req, res) => {
         title: 'Confira meus projetos principais',
         projectList: [
           {
-            title: 'Smart Gadget Web',
-            description: 'Este app faz uso de inteligência artificial e proceessamento de linguagem natural para recomendar modelos de notebooks, baseado nas necessidades do usuário. As tecnologias utilizadas foram: React, React-router, Redux, Redux-saga, Jest, Styled-components, Node, Express, MongoDB e Natural.js',
-            background: './projects/smart-gadget.png',
-            link: 'https://smart-gadget-web.herokuapp.com/',
-            github: 'https://github.com/jhonatan98rios/smart.gadget.frontend',
+            title: 'Dead Nation',
+            description: 'Dead Nation é um shooter 2D top-down de zumbis, com diversos níveis de dificuldade e uma loja com armas e equipamentos para melhoria do personagem. As tecnologias utilizadas foram: Ionic, React, Typescript e Sass',
+            background: './projects/dead-nation.png',
+            link: 'https://play.google.com/store/apps/details?id=com.rios.deadnation',
+            github: 'https://github.com/jhonatan98rios/DeadNationApp',
+            color: 'rgba(91,26,184, .9)'
+          },
+          {
+            title: 'Swordio',
+            description: 'Swordio é um Turn-based RPG online, de combate PVP que roda diretamente no browser. É só criar uma conta, fazer login e criar uma sala. Depois é só compartilhar a sala com seus amigos e começar a jogar. As tecnologias utilizadas foram: Vue, Sass, Node, Socket.io, PostgreSQL',
+            background: './projects/swordio.png',
+            link: 'https://sword-io.herokuapp.com/',
+            github: 'https://github.com/jhonatan98rios/swordio',
+            color: 'rgba(14,179,156, .9)'
+          },
+          {
+            title: 'Guia de hardware',
+            description: 'Este app faz uso de inteligência artificial e processamento de linguagem natural para recomendar modelos de notebooks, baseado nas necessidades do usuário. As tecnologias utilizadas foram: React-Native, Redux, Redux-saga, Styled-components, Node, Express, Natural.js, Jest e MongoDB',
+            background: './projects/hardware-guide.png',
+            link: 'https://play.google.com/store/apps/details?id=com.hardwareguide',
+            github: 'https://github.com/jhonatan98rios/HardwareGuide',
             color: 'rgba(91,26,184, .9)'
           },
           {
             title: 'Fareja Fatos App',
-            description: 'Este aplicativo foi desenvolvido durante o Hackcovid-19 (evento patrocinado pela Fiocruz), com o objetivo de auxiliar a população na identificação de noticias falsas através de inteligência artificial. As tecnologias utilizadas foram: React-native, React-router, Styled-components, Axios, Python, Flask e MongoDB',
-            background: './projects/fareja-fatos-app.png',
+            description: 'Este aplicativo foi desenvolvido durante o Hackcovid-19 (evento patrocinado pela Fiocruz), com o objetivo de auxiliar a população na identificação de noticias falsas através de inteligência artificial. As tecnologias utilizadas foram: React-native, Styled-components, Axios, Python, Flask e MongoDB',
+            background: './projects/fareja-fatos.png',
+            link: 'https://play.google.com/store/apps/details?id=com.farejafatosapp',
             github: 'https://github.com/jhonatan98rios/FarejaFatosApp',
-            color: 'rgba(91,26,184, .9)'
-          },
-          {
-            title: 'Fareja Fatos Institucional',
-            description: 'Este site foi desenvolvido para promover e divulgar o aplicativo Fareja Fatos, disponibilizando dados técnicos e artigos científicos para a conscientização da população. As tecnologias utilizadas foram: Next.js (framework React), Styled-components, Axios, MongoDB e Firebase',
-            background: './projects/fareja-fatos-blog.png',
-            github: 'https://github.com/jhonatan98rios/fareja-fatos-site',
-            link: 'https://fareja-fatos-web.herokuapp.com/',
             color: 'rgba(14,179,156, .9)'
-          },
-          {
-            title: 'Fire Day',
-            description: 'Um jogo web criado para conscientizar a população sobre os efeitos das queimadas. As tecnologias utilizadas foram: Vue, Vuex, Vue-router, Vue2-touch-events, Sass e Particles.js',
-            background: './projects/fireday.png',
-            github: 'https://github.com/jhonatan98rios/fireDay',
-            color: 'rgba(91,26,184, .9)'
-          },
-          {
-            title: 'Whatsapp Clone Vanilla',
-            description: 'Um clone do Whatsapp Web. Tecnologias utilizadas: HTML, CSS, Javascript MVC, Webpack, Firebase-storage, Firebase-firestore e Firebase-functions',
-            background: './projects/whatsapp-clone-vanilla.png',
-            github: 'https://github.com/jhonatan98rios/clothing_store',
-            color: 'rgba(14,179,156, .9)'
-          },
-          {
-            title: 'Clothing Store',
-            description: 'Um marketplace para lojas de roupa catalogarem seus produtos. As tecnologias utilizadas foram: React, React-router, Sass e Axios',
-            background: './projects/clothing_store.png',
-            github: 'https://github.com/jhonatan98rios/clothing_store',
-            color: 'rgba(14,179,156, .9)'
-          },
-          {
-            title: 'Sistema de Gestão',
-            description: 'Um sistema de linha de comando para gerenciamento de clientes, funcionários, vendas e estoque. A tecnologia utilizada nesse projeto foi a linguagem C',
-            github: 'https://github.com/jhonatan98rios/clothing_store',
-            color: 'rgba(14,179,156, .9)'
-          },
+          }
         ],
       },
       github: 'Compartilhar o conhecimento e a experiência nos ajuda a ir mais longe. Acesse aqui o código de meus principais projetos.'
