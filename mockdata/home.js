@@ -7,7 +7,7 @@ export const home = (req, res) => {
     },
     body: {
       hero: '"As pessoas que são loucas o suficiente para achar que podem mudar o mundo, são aquelas que o mudam" (Steve Jobs)',
-      about: 'Me chamo Jhonatan Teixeira Rios, e atuo como programador há 2 anos. Sou formado em comunicação visual e tenho 1 ano de experiência como Designer Gráfico e Motion Designer. Atualmente trabalho como Desenvolvedor Front-End além de manter sistemas web e aplicativos independentes, desenvolvidos em diversas técnologias como Vue, React, React Native, Node e Python.',
+      about: 'Me chamo Jhonatan Teixeira Rios, e atuo como programador há 4 anos. Sou formado em comunicação visual e tenho 1 ano de experiência como Designer Gráfico e Motion Designer. Atualmente trabalho como Eng. de Dados e Desenvolvedor Front-End autônomo além de manter sistemas web e aplicativos independentes, desenvolvidos em diversas técnologias como Vue, React, React Native, Node e Python.',
       technologies: {
         frontend: [
           { 
