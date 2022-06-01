@@ -23,21 +23,26 @@ export default function Navbar() {
         <div/>
       </div>
       <ul className={`${styles.navbarList} ${ isOpen ? styles.isOpen : null}`}>
-        <Link href="/#home-hero">
-          <li className="paragraph" onClick={toogleMenu}>
-            Inicio
-          </li>
-        </Link>
-        <Link href="/#home-technologies">
-          <li className="paragraph" onClick={toogleMenu}>
-            Tecnologias
-          </li>
-        </Link>
-        <Link href="/projetos">
-          <li className="paragraph" onClick={toogleMenu}>
-            Projetos
-          </li>
-        </Link>
+        <li className="paragraph" onClick={toogleMenu}>
+          <Link href="/#home-hero">
+            <a> Inicio </a> 
+          </Link>
+        </li>
+        <li className="paragraph" onClick={toogleMenu}>
+          <Link href="/#home-technologies">
+            <a> Tecnologias </a>
+          </Link>
+        </li>
+        <li className="paragraph" onClick={toogleMenu}>
+          <Link href="/projetos">
+            <a> Projetos </a>
+          </Link>
+        </li>
+        <li className="paragraph" onClick={toogleMenu}>
+          <Link href="https://jhonatan-teixeira-rios-blog.herokuapp.com/">
+            <a target="_blank"> Blog </a>
+          </Link>
+        </li>
       </ul>
     </section>
   )
