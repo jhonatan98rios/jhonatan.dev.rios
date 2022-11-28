@@ -1,13 +1,13 @@
 import styles from './styles.module.scss'
-import TypeWriter from '../../../controllers/TypeWriter'
-//import Particles from '../../../controllers/Particles'
+import TypeWriter from '../../../lib/TypeWriter'
+//import Particles from '../../../lib/Particles'
 import Globe from '../../../components/Home/Globe'
-import { useEffect } from 'react';
+import { useEffect, createRef } from 'react';
 
 export default function Hero({content}) {
 
-  const particlesEl = React.createRef()
-  const typeWriterEl = React.createRef()
+  const particlesEl = createRef()
+  const typeWriterEl = createRef()
   
   
   useEffect(()=>{

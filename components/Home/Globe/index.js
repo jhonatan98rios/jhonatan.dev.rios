@@ -1,12 +1,12 @@
-import { useEffect } from 'react';
+import { useEffect, createRef } from 'react';
 import styles from './style.module.scss'
 
 import * as THREE from "three"
-import { createSphere, createClouds, createStars } from '../../../controllers/Globe'
+import { createSphere, createClouds, createStars } from '../../../lib/Globe'
 
 export default function Globe(){
 
-  const webgl = React.createRef()
+  const webgl = createRef()
 
   useEffect(()=>{
 

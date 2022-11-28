@@ -24,22 +24,22 @@ export default function Navbar() {
       </div>
       <ul className={`${styles.navbarList} ${ isOpen ? styles.isOpen : null}`}>
         <li className="paragraph" onClick={toogleMenu}>
-          <Link href="/#home-hero">
+          <Link href="/#home-hero" legacyBehavior>
             <a> Inicio </a> 
           </Link>
         </li>
         <li className="paragraph" onClick={toogleMenu}>
-          <Link href="/#home-technologies">
+          <Link href="/#home-technologies" legacyBehavior>
             <a> Tecnologias </a>
           </Link>
         </li>
         <li className="paragraph" onClick={toogleMenu}>
-          <Link href="/projetos">
+          <Link href="/projetos" legacyBehavior>
             <a> Projetos </a>
           </Link>
         </li>
         <li className="paragraph" onClick={toogleMenu}>
-          <Link href="https://jhonatan-teixeira-rios-blog.herokuapp.com/">
+          <Link href="https://jhonatan-teixeira-rios-blog.herokuapp.com/" legacyBehavior>
             <a target="_blank"> Blog </a>
           </Link>
         </li>

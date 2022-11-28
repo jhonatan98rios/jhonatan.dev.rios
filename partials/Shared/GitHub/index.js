@@ -8,7 +8,7 @@ export default function Hero({content}) {
       <h2 className={`${styles.title} subtitle`}> 
         {content}
       </h2>
-      <Link href={"https://github.com/jhonatan98rios"}>
+      <Link href={"https://github.com/jhonatan98rios"} legacyBehavior>
         <a className="subtitle" target="_blank">
           GitHub
         </a>

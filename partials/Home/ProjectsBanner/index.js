@@ -6,7 +6,7 @@ export default function ProjectsBanner() {
   return (
     <section className={styles.container}>
       <h2 className="title"> Veja aqui alguns de meus projetos </h2>
-      <Link href="/projetos">
+      <Link href="/projetos" legacyBehavior>
         <a className="subtitle">
           Projetos
         </a>

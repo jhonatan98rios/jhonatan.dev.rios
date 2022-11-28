@@ -8,5 +8,10 @@
     border-radius: 64px;
     padding: 16px;
     text-align: center;
+
+    .item {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
