@@ -34,14 +34,14 @@ export const projects = (req, res) => {
             github: 'https://github.com/jhonatan98rios/HardwareGuide',
             color: 'rgba(91,26,184, .9)'
           },
-          {
+          /* {
             title: 'Fareja Fatos App',
             description: 'Este aplicativo foi desenvolvido durante o Hackcovid-19 (evento patrocinado pela Fiocruz), com o objetivo de auxiliar a população na identificação de noticias falsas através de inteligência artificial. As tecnologias utilizadas foram: React-native, Styled-components, Axios, Python, Flask e MongoDB',
             background: './projects/fareja-fatos.png',
             link: 'https://play.google.com/store/apps/details?id=com.farejafatosapp',
             github: 'https://github.com/jhonatan98rios/FarejaFatosApp',
             color: 'rgba(14,179,156, .9)'
-          }
+          } */
         ],
       },
       github: 'Compartilhar o conhecimento e a experiência nos ajuda a ir mais longe. Acesse aqui o código de meus principais projetos.'

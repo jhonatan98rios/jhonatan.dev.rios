@@ -1,4 +1,4 @@
-.container {
+.section {
   width: 100%;
   height: auto;
   background-color: #121414;
@@ -7,6 +7,22 @@
   padding-bottom: 64px;
   overflow: hidden;
   margin-top: 32px;
+
+  .container {
+    width: 90vw;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+
+    .swiper {
+      @media (max-width: 1024px) {
+        //width: 768px;
+      }
+    }
+  }
 
   h1{
     color: #ffffff;
@@ -18,9 +34,15 @@
     margin: 64px auto;
     max-width: 1240px;
 
-    @media (max-width: 768px) {
-      width: 80%;
+    @media (max-width: 1024px) {
+      width: 100%;
     }
+
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
   }
 }
 

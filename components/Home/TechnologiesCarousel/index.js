@@ -12,11 +12,12 @@ export default function Technologies({content, title}){
         <div className={styles.carousel}>
           <Swiper 
             slidesPerView={5}
-            spaceBetween={32}
+            spaceBetween={24}
+            className={styles.swiper}
           >
             { content.map((item, index) => 
-              <SwiperSlide className={styles.item}>
-                <TechnologyCircle item={item} key={index} />
+              <SwiperSlide className={styles.item} key={index}>
+                <TechnologyCircle item={item} />
               </SwiperSlide>
             )}
           </Swiper>

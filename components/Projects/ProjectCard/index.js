@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 export default function ProjectList({card}) {
 
   return (
-    <section 
+    <div 
       className={styles.container}
       style={{
         backgroundImage: `url(${card.background || './projects/default.png'})`,
@@ -37,6 +37,6 @@ export default function ProjectList({card}) {
         }
         
       </div>
-    </section>
+    </div>
   )
 }

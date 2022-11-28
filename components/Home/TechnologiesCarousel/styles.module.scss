@@ -1,6 +1,11 @@
 .container{
   text-align: center;
   
+  @media (max-width: 768px) {
+    overflow-x: visible;
+    width: 100%;
+  }
+  
   .carousel{
     width: 90vw;
     max-width: 1280px;
@@ -8,6 +13,20 @@
     border-radius: 64px;
     padding: 16px;
     text-align: center;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 16px 0px;
+      margin: 0px;
+      overflow-x: visible;
+    }
+    
+
+    .swiper {
+      @media (max-width: 768px) {
+        width: 768px;
+      }
+    }
 
     .item {
       display: flex;
