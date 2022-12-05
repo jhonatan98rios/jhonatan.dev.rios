@@ -6,16 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "deploy": "next build && next export",
-    "start": "next start -p $PORT"
+    "start": "next start"
   },
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "*",
     "next": "13.0.5",
     "react": "*",
     "react-dom": "*",
     "react-visibility-sensor": "^5.1.1",
-    "sass": "^1.26.10",
     "swiper": "^8.4.5",
     "three": "^0.123.0"
+  },
+  "devDependencies": {
+    "sass": "*"
   }
 }

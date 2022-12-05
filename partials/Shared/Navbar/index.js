@@ -24,12 +24,12 @@ export default function Navbar() {
       </div>
       <ul className={`${styles.navbarList} ${ isOpen ? styles.isOpen : null}`}>
         <li className="paragraph" onClick={toogleMenu}>
-          <Link href="/#home-hero" legacyBehavior>
+          <Link href="/#inicio" legacyBehavior>
             <a> Inicio </a> 
           </Link>
         </li>
         <li className="paragraph" onClick={toogleMenu}>
-          <Link href="/#home-technologies" legacyBehavior>
+          <Link href="/#tecnologias" legacyBehavior>
             <a> Tecnologias </a>
           </Link>
         </li>
