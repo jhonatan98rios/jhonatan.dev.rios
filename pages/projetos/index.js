@@ -23,7 +23,7 @@ const content = {
           title: 'Swordio',
           description: 'Swordio é um Turn-based RPG online, de combate PVP que roda diretamente no browser. É só criar uma conta, fazer login e criar uma sala. Depois é só compartilhar a sala com seus amigos e começar a jogar. As tecnologias utilizadas foram: Vue, Sass, Node, Socket.io, PostgreSQL',
           background: './projects/swordio.png',
-          link: 'https://sword-io.herokuapp.com/',
+          /* link: 'https://sword-io.herokuapp.com/', */
           github: 'https://github.com/jhonatan98rios/swordio',
           color: 'rgba(14,179,156, .9)'
         },
