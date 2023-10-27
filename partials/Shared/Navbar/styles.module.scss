@@ -36,14 +36,13 @@
   padding: 0px;
   margin: 0px 32px;
   display: flex;
-  max-width: 360px;
   justify-content: space-between;
   align-items: center;
   
 
   li{
     list-style: none;
-    padding: 8px;
+    padding: 8px 24px;
     color: #eeeeee;
     cursor: pointer;
 
@@ -67,7 +66,7 @@
     transition: all 1s;
 
     li{
-      padding: 16px;
+      padding: 16px 32px;
       width: 100%;
     }
   }

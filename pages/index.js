@@ -207,19 +207,27 @@ const content = {
           color: 'rgba(91,26,184, .9)'
         },
         {
+          title: 'Next Ecommerce',
+          description: 'This project was created with the aim of serving as a front-end for an ecommerce based on microservices, but it is not yet finished.',
+          background: './projects/ecommerce.png',
+          link: 'https://jhonatan-dev-rios-store.vercel.app/',
+          github: 'https://github.com/jhonatan98rios/nextjs-commerce',
+          color: 'rgba(14,179,156, .9)'
+        },
+        {
           title: 'Swordio',
           description: 'Swordio is a Turn-based online RPG, PVP combat that runs directly in the browser. Just create an account, log in and create a room. Then just share the room with your friends and start playing. The technologies used were: Vue, Sass, Node, Socket.io, PostgreSQL',
           background: './projects/swordio.png',
           github: 'https://github.com/jhonatan98rios/swordio',
-          color: 'rgba(14,179,156, .9)'
+          color: 'rgba(91,26,184, .9)'
         },
         {
-          title: 'Guia de hardware',
+          title: 'Guia de hardware (Deprecated)',
           description: "This app uses artificial intelligence and natural language processing to recommend notebook models, based on the user's needs. The technologies used were: React-Native, Redux, Redux-saga, Styled-components, Node, Express, Natural.js, Jest and MongoDB",
           background: './projects/hardware-guide.png',
           link: 'https://play.google.com/store/apps/details?id=com.hardwareguide',
           github: 'https://github.com/jhonatan98rios/HardwareGuide',
-          color: 'rgba(91,26,184, .9)'
+          color: 'rgba(14,179,156, .9)'
         },
       ],
     },
