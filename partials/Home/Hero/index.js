@@ -22,7 +22,7 @@ export default function Hero({content}) {
 
 
   return (
-    <section className={styles.container} id={"inicio"} ref={particlesEl}>
+    <section className={styles.container} id={"home"} ref={particlesEl}>
       <Globe />
       <h1 className={`${styles.title} title`} ref={typeWriterEl}> 
         {content}

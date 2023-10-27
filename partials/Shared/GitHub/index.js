@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 export default function Hero({content}) {
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="social">
       <h2 className={`${styles.title} subtitle`}> 
         {content}
       </h2>

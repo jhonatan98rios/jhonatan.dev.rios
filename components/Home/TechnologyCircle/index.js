@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react'
+import { Tooltip } from 'react-tooltip'
+
 import styles from './styles.module.scss'
+//import 'react-tooltip/dist/react-tooltip.css'
 
 export default function Technologies({item}) {
 
@@ -19,17 +22,17 @@ export default function Technologies({item}) {
   },[frame])
 
   return (
-    <>
-      <li 
+    <li>
+      <a
+        data-tooltip-id="tool-tip"
+        data-tooltip-place="top"
+        data-tooltip-content={item.title}
         className={styles.listItem}
         style={{ backgroundImage: `conic-gradient( from 0, #232628 0, #232628 ${frame}%, #00FFC2 0, #A700F5 50%, #00FFC2 100% )` }}
       >
-        {/* <span className="paragraph">
-          {item.title}
-        </span> */}
         <img src={item.url} alt={item.title}/>
-      </li>
-    </>
+      </a>
+    </li>
     
   )
 }

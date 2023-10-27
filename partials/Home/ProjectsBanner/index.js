@@ -4,9 +4,9 @@ import styles from './styles.module.scss'
 export default function ProjectsBanner() {
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id={"projects"}>
       <h2 className="title"> Veja aqui alguns de meus projetos </h2>
-      <Link href="/projetos" legacyBehavior>
+      <Link href="/projects" legacyBehavior>
         <a className="subtitle">
           Projetos
         </a>

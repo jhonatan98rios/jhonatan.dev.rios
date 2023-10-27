@@ -24,23 +24,28 @@ export default function Navbar() {
       </div>
       <ul className={`${styles.navbarList} ${ isOpen ? styles.isOpen : null}`}>
         <li className="paragraph" onClick={toogleMenu}>
-          <Link href="/#inicio" legacyBehavior>
-            <a> Inicio </a> 
+          <Link href="/#home" scroll={false} legacyBehavior>
+            <a> Home </a> 
           </Link>
         </li>
         <li className="paragraph" onClick={toogleMenu}>
-          <Link href="/#tecnologias" legacyBehavior>
-            <a> Tecnologias </a>
+          <Link href="/#technologies" scroll={false} legacyBehavior>
+            <a> Technologies </a>
           </Link>
         </li>
         <li className="paragraph" onClick={toogleMenu}>
-          <Link href="/projetos" legacyBehavior>
-            <a> Projetos </a>
+          <Link href="/#projects" scroll={false} legacyBehavior>
+            <a> Projects </a>
           </Link>
         </li>
         <li className="paragraph" onClick={toogleMenu}>
-          <Link href="https://jhonatan-dev-rios-blog.vercel.app/" legacyBehavior>
+          <Link href="https://blog.jhonatan-dev-rios.com/" legacyBehavior>
             <a target="_blank"> Blog </a>
+          </Link>
+        </li>
+        <li className="paragraph" onClick={toogleMenu}>
+          <Link href="/#social" scroll={false} legacyBehavior>
+            <a> Social </a>
           </Link>
         </li>
       </ul>
