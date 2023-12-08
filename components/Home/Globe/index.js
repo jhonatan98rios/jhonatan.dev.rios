@@ -2,7 +2,7 @@ import { useEffect, createRef } from 'react';
 import styles from './style.module.scss'
 
 import * as THREE from "three"
-import { createSphere, createClouds, createStars } from '../../../lib/Globe'
+import { createSphere, createClouds } from '../../../lib/Globe'
 
 export default function Globe(){
 
