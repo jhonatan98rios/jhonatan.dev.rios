@@ -210,26 +210,11 @@ const content = {
           color: 'rgba(14,179,156, .9)'
         },
         {
-          title: 'Classifiers',
-          description: 'This project was created while my studies about microservices and AWS. This project consists in 3 microservices that works receiving a csv file with the train data, realizing the train of classification model and providing a endpoint to consume the trained model as a Rest API. For this project I decided to use Bun.js as a runtime with Typescript, AWS S3, AWS SQS and I intend to deploy with Kuberntes on AWS too.',
-          background: './projects/classifiers.png',
-          github: 'https://github.com/jhonatan98rios/nodejs-naive-bayes-worker',
-          color: 'rgba(91,26,184, .9)'
-        },
-        {
           title: 'Metal Against Demons',
           description: "This is project is a 2D top down game, made with Java and Kotlin. It's inspired by Vampire Survivors, but the objective is to defeat monsters using music.",
           background: './projects/mad.png',
           link: 'https://play.google.com/store/apps/details?id=com.teixeirarios.mad',
           github: 'https://github.com/jhonatan98rios/metal-against-demons-android',
-          color: 'rgba(14,179,156, .9)'
-        },
-        {
-          title: 'Next Ecommerce',
-          description: "This project was created with the aim of serving as a front-end for an ecommerce based on microservices, but it's not finished yet.",
-          background: './projects/ecommerce.png',
-          link: 'https://jhonatan-dev-rios-store.vercel.app/',
-          github: 'https://github.com/jhonatan98rios/nextjs-commerce',
           color: 'rgba(91,26,184, .9)'
         },
         {
@@ -240,6 +225,22 @@ const content = {
           github: 'https://github.com/jhonatan98rios/hardware-guide-web',
           color: 'rgba(14,179,156, .9)'
         },
+        {
+          title: 'Classifiers',
+          description: 'This project was created while my studies about microservices and AWS. This project consists in 3 microservices that works receiving a csv file with the train data, realizing the train of classification model and providing a endpoint to consume the trained model as a Rest API. For this project I decided to use Bun.js as a runtime with Typescript, AWS S3, AWS SQS and I intend to deploy with Kuberntes on AWS too.',
+          background: './projects/classifiers.png',
+          github: 'https://github.com/jhonatan98rios/nodejs-naive-bayes-worker',
+          color: 'rgba(91,26,184, .9)'
+        },
+        {
+          title: 'Next Ecommerce',
+          description: "This project was created with the aim of serving as a front-end for an ecommerce based on microservices, but it's not finished yet.",
+          background: './projects/ecommerce.png',
+          link: 'https://jhonatan-dev-rios-store.vercel.app/',
+          github: 'https://github.com/jhonatan98rios/nextjs-commerce',
+          color: 'rgba(14,179,156, .9)'
+        },
+        
         // {
         //   title: 'Swordio',
         //   description: 'Swordio is a Turn-based online RPG, PVP combat that runs directly in the browser. Just create an account, log in and create a room. Then just share the room with your friends and start playing. The technologies used were: Vue, Sass, Node, Socket.io, PostgreSQL',
