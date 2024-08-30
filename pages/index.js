@@ -101,6 +101,10 @@ const content = {
           url: './technologies/backend/nest.png'
         },
         {
+          title: 'Serverless',
+          url: './technologies/devops/serverless.png'
+        },
+        {
           title: 'Flask',
           url: './technologies/backend/flask.png'
         },
@@ -129,10 +133,6 @@ const content = {
         {
           title: 'AWS',
           url: './technologies/devops/aws.png'
-        },
-        {
-          title: 'Serverless',
-          url: './technologies/devops/serverless.png'
         },
         {
           title: 'Docker',

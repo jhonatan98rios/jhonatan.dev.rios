@@ -39,7 +39,7 @@ export default function Navbar() {
           </Link>
         </li>
         <li className="paragraph" onClick={toogleMenu}>
-          <Link href="https://blog.jhonatan-dev-rios.com/" legacyBehavior>
+          <Link href="https://jhonatan-dev-rios-blog.vercel.app/" legacyBehavior>
             <a target="_blank"> Blog </a>
           </Link>
         </li>
