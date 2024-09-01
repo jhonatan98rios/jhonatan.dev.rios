@@ -205,7 +205,7 @@ const content = {
           title: 'Blog',
           description: 'My personal blog is a set of content that I considered important during my studies, so I decided to organize my knowledge into articles about careers, programming, AWS and architecture. This blog was created with Next.js, Scss, Node, Typescript, MongoDB, Vercel and AWS.',
           background: './projects/blog.png',
-          link: 'https://jhonatan-dev-rios-blog.vercel.app/',
+          link: 'https://www.jhonatan-dev-rios-blog.com.br/',
           github: 'https://github.com/jhonatan98rios/blog-pessoal',
           color: 'rgba(14,179,156, .9)'
         },
