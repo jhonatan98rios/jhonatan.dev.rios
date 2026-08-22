@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://jhonatan-dev-rios.vercel.app'
 const SITE_NAME = 'Jhonatan Teixeira Rios'
-const DESCRIPTION = 'Software developer portfolio of Jhonatan Teixeira Rios — cloud, data engineering and full-stack projects.'
+const DESCRIPTION = 'Software developer portfolio of Jhonatan Teixeira Rios. Cloud, data engineering and full-stack projects.'
 
 export default function HeadComponent({ content }) {
   const title = content.title === SITE_NAME ? SITE_NAME : `${content.title} | ${SITE_NAME}`
@@ -15,7 +15,7 @@ export default function HeadComponent({ content }) {
     '@type': 'Person',
     name: SITE_NAME,
     url: SITE_URL,
-    jobTitle: 'Software Developer',
+    jobTitle: 'Data Engineer',
     sameAs: [
       'https://github.com/jhonatan98rios',
       'https://www.linkedin.com/in/jhonatan-teixeira-rios-499400128/',

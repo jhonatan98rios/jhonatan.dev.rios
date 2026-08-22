@@ -8,13 +8,13 @@ import ProjectList from '../partials/Home/ProjectList'
 const content = {
   head: {
     title: 'Jhonatan Teixeira Rios',
-    description: 'Software developer portfolio of Jhonatan Teixeira Rios — cloud, data engineering and full-stack projects.',
+    description: 'Software developer portfolio of Jhonatan Teixeira Rios. Cloud, data engineering and full-stack projects.',
     path: '/',
     person: true
   },
   body: {
     hero: '"The ones who are crazy enough to think they can change the world are the ones who do" (Steve Jobs)',
-    about: "My name is Jhonatan Teixeira Rios and I have been working with technology since 2016. I have a technical degree in visual communication and worked as a Graphic Designer and Motion Designer for 3 years. After that, I made a career transition to Software Development, when I started working as a Frontend Engineer at the company Cielo, working directly on the Landing Page, that was firstly made in Handlebars, JQuery and Bootstrap, and after some months we rewrite using Vue, Nuxt, Scss and Bulma. I currently work as a Data Engineer at PagSeguro, creating internal data solutions for ETL (extraction, transformation and loading), Data Pipelines and data analysis, using technologies such as Typescript, Python, SQL, Kafka, RabbitMQ, Docker, Kubernetes and AWS. I also have some personal projects such as my blog, applications and games for Android and Artificial Intelligence projects. Additionally, I have been specializing in cloud development with AWS and recently acquired an AWS Cloud Practitioner certification.",
+    about: "My name is Jhonatan Teixeira Rios and I'm a Data Engineer with 7 years of experience in the technology industry. My career started in visual communication, working as a Graphic Designer and Motion Designer for 3 years before transitioning to software development in 2019, when I joined Cielo as a Frontend Engineer. In 2021 I moved to data engineering at PagBank, where I worked with Google Analytics data, building ETL pipelines and data analysis using BigQuery, Python, Kubernetes, Kafka, AWS and Redshift. Since 2024 I've been working as a Data Engineer at Kbra, working with Python, Kubernetes, PostgreSQL, Snowflake, SQL Server, Dash (UI) and AWS. I also have personal projects such as my blog, Android applications and games, and Artificial Intelligence projects. Additionally, I have been specializing in cloud development with AWS and recently acquired an AWS Cloud Practitioner certification.",
     technologies: {
       languages: [
         {
@@ -205,7 +205,7 @@ const content = {
       projectList: [
         {
           title: 'Blog',
-          description: 'My personal blog is a collection of content I found important during my studies — articles about careers, programming, AWS and software architecture. Built with Next.js, SCSS, Node, TypeScript, MongoDB, Vercel and AWS.',
+          description: 'My personal blog is a collection of content I found important during my studies, articles about careers, programming, AWS and software architecture. Built with Next.js, SCSS, Node, TypeScript, MongoDB, Vercel and AWS.',
           background: '/projects/blog.png',
           link: 'https://www.jhonatan-dev-rios-blog.com.br/',
           github: 'https://github.com/jhonatan98rios/blog-pessoal',
