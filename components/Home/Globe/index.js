@@ -29,12 +29,12 @@ export default function Globe(){
     const light = new THREE.DirectionalLight(0xaaaaaa, 2);
     light.position.set(5, 5, -3);
     
-    const sphere = createSphere(radius, segments);
+    const sphere = createSphere(radius, segments, renderer);
     sphere.rotation.y = angle;
     sphere.rotation.x = -0.4
     sphere.position.y = position
     
-    const clouds = createClouds(radius, segments);
+    const clouds = createClouds(radius, segments, renderer);
     clouds.rotation.y = angle;
     clouds.rotation.x = -0.4;
     clouds.position.y = position
