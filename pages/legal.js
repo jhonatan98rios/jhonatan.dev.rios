@@ -4,7 +4,8 @@ import styles from '../styles/legal.module.scss'
 const content = {
   head: {
     title: 'Data Collection Policy',
-    description: 'Data collection policy for Jhonatan Rios applications'
+    description: 'Data collection policy for Jhonatan Rios applications',
+    path: '/legal'
   },
   body: {
     policy: {
