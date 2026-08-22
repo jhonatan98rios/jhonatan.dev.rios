@@ -15,191 +15,49 @@ const content = {
   body: {
     hero: '"The ones who are crazy enough to think they can change the world are the ones who do" (Steve Jobs)',
     about: "My name is Jhonatan Teixeira Rios and I'm a Data Engineer with 7 years of experience in the technology industry. My career started in visual communication, working as a Graphic Designer and Motion Designer for 3 years before transitioning to software development in 2019, when I joined Cielo as a Frontend Engineer. In 2021 I moved to data engineering at PagBank, where I worked with Google Analytics data, building ETL pipelines and data analysis using BigQuery, Python, Kubernetes, Kafka, AWS and Redshift. Since 2024 I've been working as a Data Engineer at Kbra, working with Python, Kubernetes, PostgreSQL, Snowflake, SQL Server, Dash (UI) and AWS. I also have personal projects such as my blog, Android applications and games, and Artificial Intelligence projects. Additionally, I have been specializing in cloud development with AWS and recently acquired an AWS Cloud Practitioner certification.",
-    technologies: {
-      languages: [
-        {
-          title: 'HTML',
-          url: '/technologies/languages/html5.png'
-        },
-        {
-          title: 'CSS',
-          url: '/technologies/languages/css3.png'
-        },
-        {
-          title: 'JavaScript',
-          url: '/technologies/languages/js.png'
-        },
-        {
-          title: 'TypeScript',
-          url: '/technologies/languages/typescript.png'
-        },
-        {
-          title: 'Python',
-          url: '/technologies/languages/python.png'
-        },
-        {
-          title: 'Java',
-          url: '/technologies/languages/java.png'
-        },
-        {
-          title: 'Kotlin',
-          url: '/technologies/languages/kotlin.png'
-        },
-      ],
-      frontend: [
-        {
-          title: 'React',
-          url: '/technologies/frontend/react.png'
-        },
-        {
-          title: 'Next.js',
-          url: '/technologies/frontend/next.png'
-        },
-        {
-          title: 'Vue',
-          url: '/technologies/frontend/vue.png'
-        },
-        {
-          title: 'Nuxt.js',
-          url: '/technologies/frontend/nuxt.png'
-        },
-        {
-          title: 'Redux',
-          url: '/technologies/frontend/redux.png'
-        },
-        {
-          title: 'React Native',
-          url: '/technologies/frontend/rn.png'
-        },
-      
-        {
-          title: 'Jetpack Compose',
-          url: '/technologies/frontend/jetpack.png'
-        },
-        {
-          title: 'Sass',
-          url: '/technologies/frontend/sass.png'
-        },
-        {
-          title: 'Styled-Components',
-          url: '/technologies/frontend/styled.png'
-        }
-      ],
-      backend: [
-        {
-          title: 'Node',
-          url: '/technologies/backend/node.png'
-        },
-        {
-          title: 'Express',
-          url: '/technologies/backend/express.png'
-        },
-        {
-          title: 'Socket.io',
-          url: '/technologies/backend/socketio.png'
-        },
-        {
-          title: 'Nest.js',
-          url: '/technologies/backend/nest.png'
-        },
-        {
-          title: 'Serverless',
-          url: '/technologies/devops/serverless.png'
-        },
-        {
-          title: 'Flask',
-          url: '/technologies/backend/flask.png'
-        },
-        {
-          title: 'Spring',
-          url: '/technologies/backend/spring.png'
-        },
-        {
-          title: 'GraphQL',
-          url: '/technologies/backend/graphql.png'
-        },
-        {
-          title: 'MongoDB',
-          url: '/technologies/backend/mongo.png'
-        },
-        {
-          title: 'PostgreSQL',
-          url: '/technologies/backend/postgresql.png'
-        },
-        {
-          title: 'MySQL',
-          url: '/technologies/backend/mysql.png'
-        },
-      ],
-      infra: [
-        {
-          title: 'AWS',
-          url: '/technologies/devops/aws.png'
-        },
-        {
-          title: 'Docker',
-          url: '/technologies/devops/docker.png'
-        },
-        {
-          title: 'Kubernetes',
-          url: '/technologies/devops/kubernetes.png'
-        },
-        {
-          title: 'Kafka',
-          url: '/technologies/devops/kafka.png'
-        },
-        {
-          title: 'RabbitMQ',
-          url: '/technologies/devops/rabbitmq.png'
-        },
-        {
-          title: 'Terraform',
-          url: '/technologies/devops/terraform.png'
-        },
-        {
-          title: 'CloudFormation',
-          url: '/technologies/devops/cloudformation.png'
-        },
-        {
-          title: 'Ansible',
-          url: '/technologies/devops/ansible.png'
-        },
-        {
-          title: 'Jenkins',
-          url: '/technologies/devops/jenkins.png'
-        },
-      ],
-      others: [
-        {
-          title: 'Git',
-          url: '/technologies/others/git.png'
-        },
-        {
-          title: 'Webpack',
-          url: '/technologies/others/webpack.png'
-        },
-        {
-          title: 'Gulp',
-          url: '/technologies/others/gulp.png'
-        },
-        {
-          title: 'Jest',
-          url: '/technologies/others/jest.png'
-        },
-        {
-          title: 'Pytest',
-          url: '/technologies/others/pytest.png'
-        },
-        {
-          title: 'Figma',
-          url: '/technologies/others/figma.png'
-        },
-        {
-          title: 'Adobe Creative Suite',
-          url: '/technologies/others/adobe.png'
-        },
-      ]
-    },
+    technologies: [
+      {
+        title: "Languages & Frameworks",
+        techs: [
+          { name: "JavaScript", years: 7 },
+          { name: "Python", years: 7 },
+          { name: "React", years: 7 },
+          { name: "Next.js", years: 7 },
+          { name: "SQL", years: 5 },
+          { name: "TypeScript", years: 5 },
+          { name: "Vue", years: 2 },
+          { name: "Nuxt", years: 2 },
+          { name: "React Native", years: 2 },
+          { name: "Kotlin / Jetpack Compose", years: 2 },
+        ]
+      },
+      {
+        title: "Data & Analytics",
+        techs: [
+          { name: "PostgreSQL", years: 5 },
+          { name: "MongoDB", years: 5 },
+          { name: "BigQuery", years: 3 },
+          { name: "Redshift", years: 3 },
+          { name: "Snowflake", years: 2 },
+          { name: "SQL Server", years: 2 },
+        ]
+      },
+      {
+        title: "Cloud & Infrastructure",
+        techs: [
+          { name: "AWS", years: 5 },
+          { name: "Docker", years: 5 },
+          { name: "Kubernetes", years: 5 },
+          { name: "Kafka", years: 3 },
+        ]
+      },
+      {
+        title: "AI",
+        techs: [
+          { name: "AI Harness", years: 1, detail: "Agents, LangChain, LangGraph, RAG, vectors, knowledge graphs, AI tools, chatbots, open-weight models and fine-tuning with Unsloth." },
+        ]
+      },
+    ],
     projects: {
       title: 'Check out my main projects',
       projectList: [
