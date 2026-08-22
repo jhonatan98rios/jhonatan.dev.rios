@@ -40,7 +40,7 @@ export default function Navbar() {
         </li>
         <li className="paragraph" onClick={toogleMenu}>
           <Link href="https://www.jhonatan-dev-rios-blog.com.br/" legacyBehavior>
-            <a target="_blank"> Blog </a>
+            <a target="_blank" rel="noopener noreferrer"> Blog </a>
           </Link>
         </li>
         <li className="paragraph" onClick={toogleMenu}>

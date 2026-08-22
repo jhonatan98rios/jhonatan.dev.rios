@@ -9,7 +9,7 @@ export default function Hero({content}) {
         {content}
       </h2>
       <Link href={"https://github.com/jhonatan98rios"} legacyBehavior>
-        <a className="subtitle" target="_blank">
+        <a className="subtitle" target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
       </Link>

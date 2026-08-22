@@ -23,7 +23,7 @@ export default function ProjectList({card}) {
         {
           card.link && (
             <Link href={card.link} legacyBehavior>
-              <a className={`paragraph ${styles.button}`} target="_blank"> Visualizar </a>
+              <a className={`paragraph ${styles.button}`} target="_blank" rel="noopener noreferrer"> View </a>
             </Link>
           )
         }
@@ -31,7 +31,7 @@ export default function ProjectList({card}) {
         {
           card.github && (
             <Link href={card.github} legacyBehavior>
-              <a className="paragraph" target="_blank"> Código Fonte </a>
+              <a className="paragraph" target="_blank" rel="noopener noreferrer"> Source Code </a>
             </Link>
           )
         }

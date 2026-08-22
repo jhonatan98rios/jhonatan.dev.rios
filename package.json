@@ -9,16 +9,14 @@
     "start": "next start"
   },
   "dependencies": {
-    "axios": "*",
     "next": "13.0.5",
-    "react": "*",
-    "react-dom": "*",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-tooltip": "^5.21.6",
-    "react-visibility-sensor": "^5.1.1",
     "swiper": "^8.4.5",
     "three": "^0.123.0"
   },
   "devDependencies": {
-    "sass": "*"
+    "sass": "1.69.7"
   }
 }

@@ -9,21 +9,13 @@ export default function ProjectList({content}) {
   const [slidesPerView, setSlidesPerView] = useState(3)
 
   function calculateSlidesPerView() {
-    if (window) {
-      setSlidesPerView(
-        window.innerWidth <= 768 ? 1.5 : (window.innerWidth < 425 ? 1 : 3)
-      )
-    }
+    setSlidesPerView(window.innerWidth < 768 ? 1.5 : 3)
   }
 
   useEffect(() => {
     calculateSlidesPerView()
-
-    const interval = addEventListener("resize", () => {
-      calculateSlidesPerView()
-    })
-
-    return clearInterval(interval)
+    window.addEventListener('resize', calculateSlidesPerView)
+    return () => window.removeEventListener('resize', calculateSlidesPerView)
   }, [])
 
   return (
