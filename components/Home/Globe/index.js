@@ -13,15 +13,15 @@ export default function Globe(){
     const width = window.innerWidth
     const height = window.innerHeight * 1.5
 
-    const radius = 0.5
+    const radius = 0.47
     const segments = 64
     const angle = 5.5
-    const position = window.innerWidth < 768 ? -0.4 : -0.2
+    const position = window.innerWidth < 768 ? -0.3 : -0.1
     const rotation = 0.2 / 864; //86400; 200x velocidade da terra
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(45, width / height, 0.01, 1000)
-    camera.position.z = window.innerWidth < 768 ? 1.6 : 1.1
+    camera.position.z = window.innerWidth < 768 ? 1.7 : 1.2
 
     const renderer = new THREE.WebGLRenderer();
     renderer.setSize(width, height);
