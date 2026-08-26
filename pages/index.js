@@ -64,7 +64,7 @@ const content = {
         {
           title: 'Blog',
           description: 'My personal blog is a collection of content I found important during my studies, articles about careers, programming, AWS and software architecture. Built with Next.js, SCSS, Node, TypeScript, MongoDB, Vercel and AWS.',
-          background: '/projects/blog.png',
+          images: ['/projects/blog.png'],
           link: 'https://www.jhonatan-dev-rios-blog.com.br/',
           github: 'https://github.com/jhonatan98rios/blog-pessoal',
           color: 'rgba(14,179,156, .9)'
@@ -72,7 +72,7 @@ const content = {
         {
           title: 'Metal Against Demons',
           description: "This project is a 2D top-down game, made with Java and Kotlin. It's inspired by Vampire Survivors, but the objective is to defeat monsters using music.",
-          background: '/projects/mad.png',
+          images: ['/projects/mad.png', '/projects/dead-nation.png'],
           link: 'https://play.google.com/store/apps/details?id=com.teixeirarios.mad',
           github: 'https://github.com/jhonatan98rios/metal-against-demons-android',
           color: 'rgba(91,26,184, .9)'
@@ -80,7 +80,7 @@ const content = {
         {
           title: 'Hardware Guide',
           description: "This app uses artificial intelligence and natural language processing to recommend notebook models, based on the user's needs. The technologies used were: Next 14, Tailwind, TypeScript, Serverless Framework and Natural.js",
-          background: '/projects/hardware-guide.png',
+          images: ['/projects/hardware-guide.png'],
           link: 'https://hardware-guide-web.vercel.app',
           github: 'https://github.com/jhonatan98rios/hardware-guide-web',
           color: 'rgba(14,179,156, .9)'
@@ -88,30 +88,28 @@ const content = {
         {
           title: 'Classifiers',
           description: 'This project was created during my studies on microservices and AWS. It consists of 3 microservices that receive a CSV file with training data, train a classification model, and provide an endpoint to consume the trained model as a REST API. For this project I decided to use Bun.js as a runtime with TypeScript, AWS S3, AWS SQS, and I intend to deploy it with Kubernetes on AWS as well.',
-          background: '/projects/classifiers.png',
+          images: ['/projects/classifiers.png'],
           github: 'https://github.com/jhonatan98rios/nodejs-naive-bayes-worker',
           color: 'rgba(91,26,184, .9)'
         },
         {
-          title: 'Next Ecommerce',
-          description: "A front-end for a microservices-based e-commerce, created to explore that architecture. It's still a work in progress.",
-          background: '/projects/ecommerce.png',
-          link: 'https://jhonatan-dev-rios-store.vercel.app/',
-          github: 'https://github.com/jhonatan98rios/nextjs-commerce',
+          title: 'Acelerai',
+          description: "SaaS career accelerator with roadmap generation, insights, market statistics and generation of resumes optimized for the position.",
+          images: ['/projects/acelerai.png'],
           color: 'rgba(14,179,156, .9)'
         },
         
         // {
         //   title: 'Swordio',
         //   description: 'Swordio is a Turn-based online RPG, PVP combat that runs directly in the browser. Just create an account, log in and create a room. Then just share the room with your friends and start playing. The technologies used were: Vue, Sass, Node, Socket.io, PostgreSQL',
-        //   background: './projects/swordio.png',
+        //   images: ['./projects/swordio.png'],
         //   github: 'https://github.com/jhonatan98rios/swordio',
         //   color: 'rgba(14,179,156, .9)'
         // },
         // {
         //   title: 'Dead Nation',
         //   description: 'Dead Nation is a 2D top-down zombie shooter, with different difficulty levels and a store with weapons and equipment to improve your character. The technologies used were: Ionic, React, Typescript and Sass',
-        //   background: './projects/dead-nation.png',
+        //   images: ['./projects/dead-nation.png'],
         //   link: 'https://play.google.com/store/apps/details?id=com.rios.deadnation',
         //   github: 'https://github.com/jhonatan98rios/DeadNationApp',
         //   color: 'rgba(91,26,184, .9)'
@@ -119,7 +117,7 @@ const content = {
         // {
         //   title: 'Guia de hardware (Deprecated)',
         //   description: "This app uses artificial intelligence and natural language processing to recommend notebook models, based on the user's needs. The technologies used were: React-Native, Redux, Redux-saga, Styled-components, Node, Express, Natural.js, Jest and MongoDB",
-        //   background: './projects/hardware-guide.png',
+        //   images: ['./projects/hardware-guide.png'],
         //   link: 'https://play.google.com/store/apps/details?id=com.hardwareguide',
         //   github: 'https://github.com/jhonatan98rios/HardwareGuide',
         //   color: 'rgba(14,179,156, .9)'
