@@ -62,6 +62,13 @@ const content = {
       title: 'Check out my main projects',
       projectList: [
         {
+          title: 'Acelerai',
+          description: "SaaS career accelerator with roadmap generation, insights, market statistics and generation of resumes optimized for the position.",
+          images: ['/projects/acelerai.png'],
+          color: 'rgba(91,26,184, .9)'
+        },
+
+        {
           title: 'Blog',
           description: 'My personal blog is a collection of content I found important during my studies, articles about careers, programming, AWS and software architecture. Built with Next.js, SCSS, Node, TypeScript, MongoDB, Vercel and AWS.',
           images: ['/projects/blog.png'],
@@ -71,10 +78,10 @@ const content = {
         },
         {
           title: 'Metal Against Demons',
-          description: "This project is a 2D top-down game, made with Java and Kotlin. It's inspired by Vampire Survivors, but the objective is to defeat monsters using music.",
-          images: ['/projects/mad.png', '/projects/dead-nation.png'],
-          link: 'https://play.google.com/store/apps/details?id=com.teixeirarios.mad',
-          github: 'https://github.com/jhonatan98rios/metal-against-demons-android',
+          description: "This project is a 2.5D top-down game, made with Typescript, Threejs and BitECS (High performance ECS/SOA optimized TS framework). It's inspired by Vampire Survivors, but the objective is to defeat monsters using music.",
+          images: ['/projects/mad-1.png', '/projects/mad-2.png'],
+          link: 'https://metal-against-demons-bitecs-threejs.vercel.app/',
+          github: 'https://github.com/jhonatan98rios/metal-against-demons-bitecs-threejs-harness',
           color: 'rgba(91,26,184, .9)'
         },
         {
@@ -91,12 +98,6 @@ const content = {
           images: ['/projects/classifiers.png'],
           github: 'https://github.com/jhonatan98rios/nodejs-naive-bayes-worker',
           color: 'rgba(91,26,184, .9)'
-        },
-        {
-          title: 'Acelerai',
-          description: "SaaS career accelerator with roadmap generation, insights, market statistics and generation of resumes optimized for the position.",
-          images: ['/projects/acelerai.png'],
-          color: 'rgba(14,179,156, .9)'
         },
         
         // {
