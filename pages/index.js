@@ -13,7 +13,6 @@ const content = {
     person: true
   },
   body: {
-    hero: '"The ones who are crazy enough to think they can change the world are the ones who do" (Steve Jobs)',
     about: "My name is Jhonatan Teixeira Rios and I'm a Data Engineer with 7 years of experience in the technology industry. I started my career as a Frontend Engineer at Cielo in 2019, and in 2021 I moved to data engineering at PagBank, where I worked with Google Analytics data, building ETL pipelines and data analysis using BigQuery, Python, Kubernetes, Kafka, AWS and Redshift. Since 2024 I've been working as a Data Engineer at Kbra, working with Python, Kubernetes, PostgreSQL, Snowflake, SQL Server, Dash (UI) and AWS. I also have personal projects such as my blog, Android applications and games, and Artificial Intelligence projects. Additionally, I have been specializing in cloud development with AWS and recently acquired an AWS Cloud Practitioner certification.",
     technologies: [
       {
@@ -58,6 +57,24 @@ const content = {
         ]
       },
     ],
+    career: {
+      title: 'My experience in the technology industry',
+      jobList: [
+        {
+          title: 'KBRA',
+          description: "I work as a Data Engineer at Kbra, where I develop and maintain data Data pipelines and  Big Data applications using Python, Kubernetes, PostgreSQL, Snowflake, SQL Server, Dash (UI) and AWS.",
+        },
+
+        {
+          title: 'PagBank',
+          description: 'I worked as a Data Engineer at PagBank, where I develop and maintain ETL and Big Data applications using Python, Kubernetes, Kafka, BigQuery, Redshift, AWS and GCP',
+        },
+        {
+          title: 'Cielo',
+          description: "I worked as a Frontend Engineer at Cielo, where I migrate the legacy Landing Page, from old technologies and maintained it using Vue.js, Nuxt.js, SCSS and Node.js, reaching high quality, good performance, best SEO practices and accessibility.",
+        }
+      ],
+    },
     projects: {
       title: 'Check out my main projects',
       projectList: [
@@ -134,7 +151,7 @@ function Home() {
   return (
     <>
       <HeadComponent content={content.head} />
-      <Hero content={content.body.hero} />
+      <Hero/>
       <About content={content.body.about} />
       <Technologies content={content.body.technologies} />
       <ProjectList content={content.body.projects} />
