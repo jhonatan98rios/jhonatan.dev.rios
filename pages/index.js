@@ -14,7 +14,7 @@ const content = {
     person: true
   },
   body: {
-    about: "My name is Jhonatan Teixeira Rios and I'm a Data Engineer with 7 years of experience in the technology industry. I started my career as a Frontend Engineer at Cielo in 2019, and in 2021 I moved to data engineering at PagBank, where I worked with Google Analytics data, building ETL pipelines and data analysis using BigQuery, Python, Kubernetes, Kafka, AWS and Redshift. Since 2024 I've been working as a Data Engineer at Kbra, working with Python, Kubernetes, PostgreSQL, Snowflake, SQL Server, Dash (UI) and AWS. I also have personal projects such as my blog, Android applications and games, and Artificial Intelligence projects. Additionally, I have been specializing in cloud development with AWS and recently acquired an AWS Cloud Practitioner certification.",
+    about: "My name is Jhonatan Teixeira Rios and I'm a Data Engineer with 7 years of experience in the technology industry, working mostly with data pipelines, analytics and cloud infrastructure. I also have personal projects such as my blog, Android applications and games, and Artificial Intelligence projects. Additionally, I have been specializing in cloud development with AWS and recently acquired an AWS Cloud Practitioner certification.",
     technologies: [
       {
         title: "Languages & Frameworks",
