@@ -65,16 +65,19 @@ const content = {
           title: 'KBRA',
           role: 'Data Engineer',
           period: '2024 — Present',
+          description: 'Building data pipelines, analytics dashboards and cloud infrastructure with Python, Kubernetes, PostgreSQL, Snowflake, SQL Server, Dash (UI) and AWS.',
         },
         {
           title: 'PagBank',
           role: 'Data Engineer',
           period: '2021 — 2024',
+          description: 'Built ETL pipelines and data analysis on Google Analytics data using BigQuery, Python, Kubernetes, Kafka, AWS and Redshift.',
         },
         {
           title: 'Cielo',
           role: 'Frontend Engineer',
           period: '2019 — 2021',
+          description: 'Started my career as a Frontend Engineer, building and maintaining web applications and features.',
         }
       ],
     },

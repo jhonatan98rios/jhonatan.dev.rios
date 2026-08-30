@@ -30,6 +30,7 @@ export default function Career({ content }) {
                 <span className="block text-[13px] text-[#9aa3a5]">{job.period}</span>
                 <h3 className="subtitle text-white my-1">{job.title}</h3>
                 <p className="m-0 text-base font-light text-[#0eb39c]">{job.role}</p>
+                {job.description && <p className="m-0 mt-2 text-sm text-[#9aa3a5]">{job.description}</p>}
               </div>
             </div>
           )
