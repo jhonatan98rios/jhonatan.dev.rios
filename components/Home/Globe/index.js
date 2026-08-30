@@ -13,6 +13,8 @@ export default function Globe(){
     const container = containerRef.current
     const renderer = new THREE.WebGLRenderer({ canvas: canvasRef.current, antialias: true })
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+    // texturas do globo são sRGB; sem isso a saída linear escurece os tons escuros (oceano fica preto)
+    renderer.outputEncoding = THREE.sRGBEncoding
 
     const radius = 0.5
     const segments = 64
@@ -22,20 +24,18 @@ export default function Globe(){
     const camera = new THREE.PerspectiveCamera(45, 1, 0.01, 100)
     camera.position.z = 2.2
 
-    const light = new THREE.DirectionalLight(0xaaaaaa, 2);
-    light.position.set(5, 5, -3);
+    const light = new THREE.DirectionalLight(0xaaaaaa, 2.5);
+    light.position.set(5, 3, 5); // vem de trás da câmera: ilumina a face visível
     
     const sphere = createSphere(radius, segments, renderer);
     sphere.rotation.y = 5.5;
     sphere.rotation.x = -0.4
-    sphere.position.y = 0.3
     
     const clouds = createClouds(radius, segments, renderer);
     clouds.rotation.y = 5.5;
     clouds.rotation.x = -0.4;
-    clouds.position.y = 0.3
 
-    scene.add(new THREE.AmbientLight(0x020202));
+    scene.add(new THREE.AmbientLight(0x303030)); // levanta o lado de sombra sem apagar o contraste
     scene.add(light)
     scene.add(sphere)
     scene.add(clouds)
@@ -45,6 +45,8 @@ export default function Globe(){
       renderer.setSize(w, h, false)
       camera.aspect = w / h
       camera.updateProjectionMatrix()
+      // mobile: esfera mais baixa pra não esconder atrás do card About
+      sphere.position.y = clouds.position.y = window.innerWidth < 768 ? 0.1 : 0.3
     }
     resize()
 
