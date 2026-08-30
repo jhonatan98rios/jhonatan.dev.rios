@@ -1,5 +1,4 @@
 import { useEffect, createRef } from 'react';
-import styles from './style.module.scss'
 
 import * as THREE from "three"
 import { createSphere, createClouds } from '../../../lib/Globe'
@@ -62,7 +61,7 @@ export default function Globe(){
 
   return (
     <section>
-      <div ref={webgl} className={styles.webgl}></div>
+      <div ref={webgl} className="fixed top-0 z-[-1]"></div>
     </section> 
   )
 }

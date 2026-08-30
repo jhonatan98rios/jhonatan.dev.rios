@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ponytail: bits sem utilitário Tailwind. Substituir por tw-* quando possível. */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #000;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@keyframes animatedOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.transition {
+  animation: animatedOpacity 5s linear;
+}
+
+/* ponytail: só o avatar precisa de CSS customizado (anel gradiente cônico animado).
+   Ceiling: cor fixa; se a paleta precisar ser dinâmica, virar arbitrary `bg-[conic-gradient(...)]`. */
+.about-avatar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: -83px;
+  width: 166px;
+  height: 166px;
+  border-radius: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(var(--angle), #8b96ff 40%, #00ffc2);
+  background-clip: content-box, border-box;
+  background-origin: border-box;
+  animation: gradient 5s linear infinite;
+}
+
+.about-avatar img {
+  width: 166px;
+  height: 166px;
+  border: 4px solid #232628;
+  border-radius: 83px;
+}
+
+@keyframes gradient {
+  from { --angle: 0deg; }
+  to { --angle: 360deg; }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}

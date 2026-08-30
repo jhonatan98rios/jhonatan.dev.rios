@@ -1,28 +1,8 @@
-import styles from './styles.module.scss'
-// import TypeWriter from '../../../lib/TypeWriter'
-//import Particles from '../../../lib/Particles'
 import Globe from '../../../components/Home/Globe'
-import { createRef } from 'react';
 
-export default function Hero({content}) {
-
-  const particlesEl = createRef()
-  const typeWriterEl = createRef()
-  
-  
-  // useEffect(()=>{
-
-  //   /* const particles = new Particles(particlesEl.current, window.innerHeight, window.innerWidth)
-  //   particles.startParticles() */
-
-  //   const typeWriter = new TypeWriter()
-  //   typeWriter.startWriter(typeWriterEl.current)
-
-  // }, [])
-
-
+export default function Hero({ content }) {
   return (
-    <section className={styles.container} id={"home"} ref={particlesEl}>
+    <section className="w-full h-[50vh] relative" id="home">
       <Globe />
     </section>
   )
