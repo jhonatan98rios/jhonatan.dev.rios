@@ -87,6 +87,10 @@ const content = {
         {
           title: 'Acelerai',
           description: "SaaS career accelerator with roadmap generation, insights, market statistics and generation of resumes optimized for the position.",
+          objective: "Accelerate career transitions with AI-generated roadmaps, market insights and resumes optimized for the target position.",
+          stack: ['Next.js', 'TypeScript', 'Node.js', 'OpenAI'],
+          architecture: 'SaaS: frontend generates personalized roadmaps and resumes from the user profile and market data.',
+          infra: 'Vercel + serverless functions.',
           images: ['/projects/acelerai.png'],
           color: 'rgba(91,26,184, .9)'
         },
@@ -94,6 +98,10 @@ const content = {
         {
           title: 'Blog',
           description: 'My personal blog is a collection of content I found important during my studies, articles about careers, programming, AWS and software architecture. Built with Next.js, SCSS, Node, TypeScript, MongoDB, Vercel and AWS.',
+          objective: 'Share knowledge about careers, programming, AWS and software architecture.',
+          stack: ['Next.js', 'SCSS', 'Node', 'TypeScript', 'MongoDB'],
+          architecture: 'Static site generated with Next.js, content served from MongoDB.',
+          infra: 'Vercel + AWS.',
           images: ['/projects/blog.png'],
           link: 'https://www.jhonatan-dev-rios-blog.com.br/',
           github: 'https://github.com/jhonatan98rios/blog-pessoal',
@@ -102,6 +110,10 @@ const content = {
         {
           title: 'Metal Against Demons',
           description: "This project is a 2.5D top-down game, made with Typescript, Threejs and BitECS (High performance ECS/SOA optimized TS framework). It's inspired by Vampire Survivors, but the objective is to defeat monsters using music.",
+          objective: 'Defeat monsters using music in a Vampire Survivors-inspired 2.5D top-down game.',
+          stack: ['TypeScript', 'Three.js', 'BitECS'],
+          architecture: '2.5D top-down game built on an ECS (Entity-Component-System) with the SOA-optimized BitECS framework.',
+          infra: 'Vercel.',
           images: ['/projects/mad-1.png', '/projects/mad-2.png'],
           link: 'https://metal-against-demons-bitecs-threejs.vercel.app/',
           github: 'https://github.com/jhonatan98rios/metal-against-demons-bitecs-threejs-harness',
@@ -110,6 +122,10 @@ const content = {
         {
           title: 'Hardware Guide',
           description: "This app uses artificial intelligence and natural language processing to recommend notebook models, based on the user's needs. The technologies used were: Next 14, Tailwind, TypeScript, Serverless Framework and Natural.js",
+          objective: "Recommend notebook models based on the user's needs using AI and natural language processing.",
+          stack: ['Next 14', 'Tailwind', 'TypeScript', 'Serverless Framework', 'Natural.js'],
+          architecture: 'Web app that parses user needs with Natural.js and scores notebook models.',
+          infra: 'Vercel + Serverless Framework.',
           images: ['/projects/hardware-guide.png'],
           link: 'https://hardware-guide-web.vercel.app',
           github: 'https://github.com/jhonatan98rios/hardware-guide-web',
@@ -118,6 +134,10 @@ const content = {
         {
           title: 'Classifiers',
           description: 'This project was created during my studies on microservices and AWS. It consists of 3 microservices that receive a CSV file with training data, train a classification model, and provide an endpoint to consume the trained model as a REST API. For this project I decided to use Bun.js as a runtime with TypeScript, AWS S3, AWS SQS, and I intend to deploy it with Kubernetes on AWS as well.',
+          objective: 'Study microservices and AWS by building a model-training pipeline exposed as a REST API.',
+          stack: ['Bun.js', 'TypeScript', 'AWS S3', 'AWS SQS', 'Kubernetes'],
+          architecture: '3 microservices: receive a CSV with training data, train a classification model, and expose it as a REST API.',
+          infra: 'AWS S3 + SQS; Kubernetes on AWS.',
           images: ['/projects/classifiers.png'],
           github: 'https://github.com/jhonatan98rios/nodejs-naive-bayes-worker',
           color: 'rgba(91,26,184, .9)'
