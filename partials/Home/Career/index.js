@@ -18,10 +18,9 @@ export default function Career({ content }) {
               even:left-1/2 even:text-left even:pl-12
               max-md:w-full max-md:left-0 max-md:text-left max-md:pl-12 max-md:pr-0"
           >
-            <span className="absolute top-10 w-3.5 h-3.5 rounded-full bg-[#0eb39c]
-              odd:right-[-8px] even:left-[-8px]
-              first:bg-[linear-gradient(135deg,#8B96FF,#00FFC2)]
-              max-md:left-[10px] max-md:right-auto" />
+            <span className={`absolute top-10 w-3.5 h-3.5 rounded-full left-1/2 -translate-x-1/2
+              max-md:left-4 max-md:translate-x-0
+              ${i === 0 ? 'bg-[linear-gradient(135deg,#8B96FF,#00FFC2)]' : 'bg-[#0eb39c]'}`} />
             <div className="inline-block">
               <span className="block text-[13px] text-[#9aa3a5]">{job.period}</span>
               <h3 className="subtitle text-white my-1">{job.title}</h3>
