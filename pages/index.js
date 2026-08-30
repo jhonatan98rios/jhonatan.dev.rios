@@ -1,6 +1,7 @@
 import HeadComponent from '../partials/Shared/HeadComponent'
 import Hero from '../partials/Home/Hero'
 import About from '../partials/Home/About'
+import Career from '../partials/Home/Career'
 import Technologies from '../partials/Home/Technologies'
 import GitHub from '../partials/Shared/GitHub'
 import ProjectList from '../partials/Home/ProjectList'
@@ -58,20 +59,22 @@ const content = {
       },
     ],
     career: {
-      title: 'My experience in the technology industry',
+      title: 'Professional trajectory',
       jobList: [
         {
           title: 'KBRA',
-          description: "I work as a Data Engineer at Kbra, where I develop and maintain data Data pipelines and  Big Data applications using Python, Kubernetes, PostgreSQL, Snowflake, SQL Server, Dash (UI) and AWS.",
+          role: 'Data Engineer',
+          period: '2024 — Present',
         },
-
         {
           title: 'PagBank',
-          description: 'I worked as a Data Engineer at PagBank, where I develop and maintain ETL and Big Data applications using Python, Kubernetes, Kafka, BigQuery, Redshift, AWS and GCP',
+          role: 'Data Engineer',
+          period: '2021 — 2024',
         },
         {
           title: 'Cielo',
-          description: "I worked as a Frontend Engineer at Cielo, where I migrate the legacy Landing Page, from old technologies and maintained it using Vue.js, Nuxt.js, SCSS and Node.js, reaching high quality, good performance, best SEO practices and accessibility.",
+          role: 'Frontend Engineer',
+          period: '2019 — 2021',
         }
       ],
     },
@@ -153,6 +156,7 @@ function Home() {
       <HeadComponent content={content.head} />
       <Hero/>
       <About content={content.body.about} />
+      <Career content={content.body.career} />
       <Technologies content={content.body.technologies} />
       <ProjectList content={content.body.projects} />
       <GitHub content={content.body.github} />

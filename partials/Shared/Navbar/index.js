@@ -29,6 +29,11 @@ export default function Navbar() {
           </Link>
         </li>
         <li className="paragraph" onClick={toogleMenu}>
+          <Link href="/#career" scroll={false} legacyBehavior>
+            <a> Career </a>
+          </Link>
+        </li>
+        <li className="paragraph" onClick={toogleMenu}>
           <Link href="/#technologies" scroll={false} legacyBehavior>
             <a> Technologies </a>
           </Link>
